@@ -1,0 +1,6 @@
+{
+  "name": "Monogram Design Studio",
+  "description": "A luxury web experience for a premium Monogram Design Studio showcasing elite brand identities, bespoke monograms, custom calligraphy, and editorial design portfolios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

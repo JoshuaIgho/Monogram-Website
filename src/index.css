@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-primary-dark: #F7F5F2;
+  --color-secondary-dark: #EFECE6;
+  --color-luxury-gold: #D4AF37;
+  --color-luxury-gold-hover: #C59F2D;
+  --color-luxury-bg: #0B0B0B;
+  --color-luxury-text-dark: #F7F5F2;
+  --color-luxury-text-light: #0B0B0B;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F5F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C59F2D;
+}
+
+/* Scrollbar-none helper */
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+body {
+  background-color: #F7F5F2;
+  color: #0B0B0B;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  cursor: none; /* Hide default cursor to enable custom luxurious cursor */
+}
+
+@media (max-width: 1024px) {
+  body {
+    cursor: auto !important; /* Restore normal cursor on mobile/touch screens */
+  }
+}
+
+/* Luxury Grain Noise Texture Overlay */
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Custom Mouse Followers */
+.custom-cursor {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: #D4AF37;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  transition: width 0.2s, height 0.2s;
+}
+
+.custom-cursor-follower {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  background: transparent;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.1s ease-out, width 0.3s, height 0.3s, border-color 0.3s, background-color 0.3s;
+}
+
+/* Hover state expansion */
+.hovering .custom-cursor {
+  width: 12px;
+  height: 12px;
+  background-color: #0B0B0B;
+}
+
+.hovering .custom-cursor-follower {
+  width: 64px;
+  height: 64px;
+  border-color: rgba(11, 11, 11, 0.8);
+  background-color: rgba(212, 175, 55, 0.08);
+}
+
+/* Fine Gold Text Glow */
+.gold-glow {
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+/* Luxury Card Shimmer */
+.luxury-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.luxury-shimmer::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 45%,
+    rgba(212, 175, 55, 0.1) 50%,
+    transparent 55%
+  );
+  transform: rotate(45deg);
+  transition: transform 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.luxury-shimmer:hover::after {
+  transform: translate(50%, 50%) rotate(45deg);
+}
+
+/* Interactive Before & After Slider */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Elegant Theme Custom Additions */
+.font-serif {
+  font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.gold-accent {
+  color: #D4AF37;
+}
+
+.gold-border {
+  border-color: #D4AF37;
+}
+
+.letter-spacing-wide {
+  letter-spacing: 0.15em;
+}
+
+.bg-monogram { 
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 500px; 
+  opacity: 0.04; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 0;
+  line-height: 1;
+  color: #D4AF37;
+  pointer-events: none;
+}
