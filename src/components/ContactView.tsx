@@ -1,7 +1,8 @@
 import { useState, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Mail, MessageSquare, MapPin, Clock, ArrowUpRight, HelpCircle, ChevronDown, CheckCircle } from 'lucide-react';
+import { Mail, MessageSquare, MapPin, Clock, ArrowUpRight, HelpCircle, ChevronDown, CheckCircle, Info, Loader2 } from 'lucide-react';
 import { ViewType } from '../types';
+import emailjs from '@emailjs/browser';
 
 interface ContactViewProps {
   onViewChange: (view: ViewType) => void;
@@ -17,7 +18,13 @@ export default function ContactView({ onViewChange }: ContactViewProps) {
     narrative: ''
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [sendError, setSendError] = useState<string | null>(null);
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
+
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || '';
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || '';
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '';
 
   const budgetOptions = [
     '$5,000 - $10,000',
@@ -53,10 +60,44 @@ export default function ContactView({ onViewChange }: ContactViewProps) {
     }
   ];
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    if (formData.name && formData.email) {
+    if (!formData.name || !formData.email) return;
+
+    setIsSending(true);
+    setSendError(null);
+
+    // If EmailJS credentials are not configured, simulate a luxury transmit sequence for smooth testing.
+    if (!serviceId || !templateId || !publicKey) {
+      console.warn("EmailJS credentials are not configured. To trigger a real email, set VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, and VITE_EMAILJS_PUBLIC_KEY in your settings.");
+      setTimeout(() => {
+        setIsSending(false);
+        setFormSubmitted(true);
+      }, 1500);
+      return;
+    }
+
+    try {
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          name: formData.name,
+          email: formData.email,
+          organization: formData.organization || 'Individual Entity',
+          category: formData.category,
+          budget: formData.budget,
+          narrative: formData.narrative,
+          to_name: 'Atelier Representative',
+        },
+        publicKey
+      );
+      setIsSending(false);
       setFormSubmitted(true);
+    } catch (err: any) {
+      console.error("EmailJS transmission failed:", err);
+      setSendError(err?.text || err?.message || 'Transmission relay handshake failed. Please verify API Credentials.');
+      setIsSending(false);
     }
   };
 
@@ -69,6 +110,7 @@ export default function ContactView({ onViewChange }: ContactViewProps) {
       budget: '$10,000 - $25,000',
       narrative: ''
     });
+    setSendError(null);
     setFormSubmitted(false);
   };
 
@@ -200,15 +242,33 @@ export default function ContactView({ onViewChange }: ContactViewProps) {
                   />
                 </div>
 
+                {/* Error feedback */}
+                {sendError && (
+                  <div className="p-4 bg-rose-500/10 border border-rose-500/30 text-rose-700 text-xs font-mono tracking-wider uppercase flex items-start gap-2">
+                    <Info className="w-4.5 h-4.5 text-rose-600 flex-shrink-0 mt-0.5" />
+                    <span>{sendError}</span>
+                  </div>
+                )}
+
                 {/* Submit Trigger */}
                 <div className="pt-4">
                   <button
                     type="submit"
-                    className="w-full flex items-center justify-center space-x-3 text-xs uppercase tracking-[0.25em] text-[#0B0B0B] bg-luxury-gold hover:bg-[#0B0B0B] hover:text-white transition-colors duration-350 font-semibold px-6 py-4 rounded-none cursor-pointer"
+                    disabled={isSending}
+                    className="w-full flex items-center justify-center space-x-3 text-xs uppercase tracking-[0.25em] text-[#0B0B0B] bg-luxury-gold hover:bg-[#0B0B0B] hover:text-white disabled:bg-zinc-200 disabled:text-zinc-400 disabled:cursor-not-allowed transition-colors duration-350 font-semibold px-6 py-4 rounded-none cursor-pointer"
                     id="submit-consultation-btn"
                   >
-                    <span>Log Professional Commission Proposal</span>
-                    <ArrowUpRight className="w-4 h-4" />
+                    {isSending ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin text-zinc-600" />
+                        <span>Transmitting Over Secure Relay...</span>
+                      </>
+                    ) : (
+                      <>
+                        <span>Log Professional Commission Proposal</span>
+                        <ArrowUpRight className="w-4 h-4" />
+                      </>
+                    )}
                   </button>
                 </div>
               </motion.form>
@@ -221,20 +281,21 @@ export default function ContactView({ onViewChange }: ContactViewProps) {
                 className="text-center py-16 space-y-8"
                 id="ledger-thankyou-message"
               >
-                <div className="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500 flex items-center justify-center mx-auto text-emerald-550">
-                  <CheckCircle className="w-8 h-8 animate-pulse" />
+                <div className="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500 flex items-center justify-center mx-auto text-emerald-555">
+                  <CheckCircle className="w-8 h-8 animate-pulse text-emerald-600" />
                 </div>
                 
                 <div className="space-y-3">
                   <h3 className="font-serif text-3xl text-[#0B0B0B] font-medium">Liaison Ledger Registered</h3>
                   <p className="text-zinc-700 text-sm font-sans max-w-sm mx-auto leading-relaxed">
-                    Greetings, <strong className="text-[#0B0B0B]">{formData.name}</strong>. Your requested proposal regarding <strong className="text-luxury-gold">{formData.category}</strong> has been secure-logged.
+                    Greetings, <strong className="text-[#0B0B0B]">{formData.name}</strong>. Your requested proposal regarding <strong className="text-luxury-gold">{formData.category}</strong> has been successfully transmitted.
                   </p>
                 </div>
 
                 <div className="bg-[#EFECE6] border border-zinc-200 p-6 rounded-none text-left max-w-md mx-auto space-y-4 font-mono text-[10px] tracking-wider text-zinc-650 leading-relaxed uppercase">
                   <p>● PROPOSAL AUDIT ID: MS-{Math.floor(Math.random() * 90000) + 10000}</p>
                   <p>● ESTIMATED AUDIT CYCLE: 2 BUSINESS DAYS</p>
+                  <p>● RELAY MODE: {(!serviceId || !templateId || !publicKey) ? 'DEMONSTRATION SIMULATOR (SET LIAISON KEYS TO GO LIVE)' : 'SECURE ACTIVE EMAILJS INTERFACE'}</p>
                   <p>● NEXT ACTION: ATELIER REPRESENTATIVE WILL CO-ORDINATE DIRECT AUDIO SCHEDULING TO REGISTER PRECISE PEN DRAFTS</p>
                 </div>
 
