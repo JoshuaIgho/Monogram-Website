@@ -11,18 +11,34 @@ interface HeaderProps {
 export default function Header({ currentView, onViewChange }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const navLinks: { label: string; view: ViewType }[] = [
-    { label: 'The Studio', view: 'home' },
-    { label: 'Philosophy', view: 'about' },
-    { label: 'Master Curations', view: 'portfolio' },
-    { label: 'Tactile Gallery', view: 'gallery' },
-    { label: 'Get in Touch', view: 'contact' },
+  interface NavLinkItem {
+    label: string;
+    view: ViewType;
+    isServices?: boolean;
+  }
+
+  const navLinks: NavLinkItem[] = [
+    { label: 'About', view: 'about' },
+    { label: 'Services', view: 'home', isServices: true },
+    { label: 'Portfolio', view: 'portfolio' },
+    { label: 'Gallery', view: 'gallery' },
+    { label: 'Contact', view: 'contact' },
   ];
 
-  const handleNavClick = (view: ViewType) => {
+  const handleNavClick = (view: ViewType, isServices: boolean = false) => {
     onViewChange(view);
     setMobileMenuOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    if (isServices) {
+      setTimeout(() => {
+        const servicesSection = document.getElementById('timeline-process-section');
+        if (servicesSection) {
+          servicesSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 120);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   return (
@@ -39,22 +55,24 @@ export default function Header({ currentView, onViewChange }: HeaderProps) {
             MONOGRAM
           </span>
           <span className="font-mono text-[9px] tracking-[0.3em] text-zinc-500 uppercase mt-0.5">
-            Design Studio • Paris
+            Design Studio
           </span>
         </button>
 
         {/* Center: Desktop Navigation Links */}
         <nav className="hidden lg:flex items-center space-x-10">
           {navLinks.map((link) => {
-            const isActive = currentView === link.view || (link.view === 'portfolio' && currentView === 'casestudy');
+            const isActive = link.isServices
+              ? currentView === 'home'
+              : currentView === link.view || (link.view === 'portfolio' && currentView === 'casestudy');
             return (
               <button
-                key={link.view}
-                onClick={() => handleNavClick(link.view)}
+                key={link.label}
+                onClick={() => handleNavClick(link.view, link.isServices)}
                 className={`relative font-sans text-xs uppercase tracking-[0.2em] transition-colors duration-300 cursor-pointer pb-1 focus:outline-none ${
-                  isActive ? 'text-luxury-gold font-medium' : 'text-zinc-600 hover:text-[#0B0B0B]'
+                  isActive ? 'text-luxury-gold font-medium' : 'text-zinc-650 hover:text-[#0B0B0B]'
                 }`}
-                id={`nav-${link.view}`}
+                id={`nav-${link.label.toLowerCase()}`}
               >
                 {link.label}
                 {isActive && (
@@ -72,7 +90,7 @@ export default function Header({ currentView, onViewChange }: HeaderProps) {
             className="flex items-center space-x-2 text-xs uppercase tracking-[0.25em] text-[#0B0B0B] bg-luxury-gold hover:bg-white transition-all duration-300 px-6 py-3 font-medium active:scale-95 cursor-pointer rounded-none border border-transparent hover:border-luxury-gold"
             id="header-cta"
           >
-            <span>Inquire Studio</span>
+            <span>Start Your Project</span>
             <ArrowUpRight className="w-3 h-3" />
           </button>
         </div>
@@ -130,18 +148,20 @@ export default function Header({ currentView, onViewChange }: HeaderProps) {
               {/* Navigation Menu List */}
               <nav className="flex flex-col space-y-2 py-8 my-auto h-full overflow-y-auto max-h-[60vh] justify-center">
                 {navLinks.map((link, index) => {
-                  const isActive = currentView === link.view || (link.view === 'portfolio' && currentView === 'casestudy');
+                  const isActive = link.isServices
+                    ? currentView === 'home'
+                    : currentView === link.view || (link.view === 'portfolio' && currentView === 'casestudy');
                   return (
                     <motion.button
-                      key={link.view}
+                      key={link.label}
                       initial={{ opacity: 0, x: 15 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: index * 0.04 }}
-                      onClick={() => handleNavClick(link.view)}
+                      onClick={() => handleNavClick(link.view, link.isServices)}
                       className={`text-left font-serif text-2xl sm:text-3xl tracking-wide py-4 border-b border-zinc-100 flex items-center justify-between group cursor-pointer focus:outline-none w-full min-h-[48px] ${
                         isActive ? 'text-luxury-gold font-semibold' : 'text-zinc-650 hover:text-[#0B0B0B]'
                       }`}
-                      id={`mobile-nav-${link.view}`}
+                      id={`mobile-nav-${link.label.toLowerCase()}`}
                     >
                       <span>{link.label}</span>
                       <ArrowUpRight className={`w-5 h-5 transition-all duration-300 ${isActive ? 'text-luxury-gold opacity-100 translate-x-0' : 'text-zinc-400 opacity-60 group-hover:translate-x-1 group-hover:-translate-y-1'}`} />
@@ -153,14 +173,14 @@ export default function Header({ currentView, onViewChange }: HeaderProps) {
               {/* Contact / Inquire Action coordinates at the bottom */}
               <div className="pt-6 border-t border-zinc-200 space-y-4">
                 <span className="font-mono text-[9px] tracking-[0.25em] text-zinc-500 uppercase block">
-                  PARIS • NEW YORK • SOHO
+                  MONOGRAM DESIGN STUDIO
                 </span>
                 <button
                   onClick={() => handleNavClick('contact')}
                   className="w-full h-14 flex items-center justify-between text-xs uppercase tracking-[0.2em] text-[#0B0B0B] bg-luxury-gold hover:bg-[#0B0B0B] hover:text-white px-6 font-semibold transition-all duration-300 cursor-pointer rounded-none shadow-md"
                   id="mobile-drawer-cta"
                 >
-                  <span>Begin Master Commission</span>
+                  <span>Start Your Project</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </button>
               </div>

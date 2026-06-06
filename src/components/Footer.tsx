@@ -19,9 +19,18 @@ export default function Footer({ onViewChange }: FooterProps) {
     }
   };
 
-  const navTo = (view: ViewType) => {
+  const navTo = (view: ViewType, isServices: boolean = false) => {
     onViewChange(view);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (isServices) {
+      setTimeout(() => {
+        const servicesSection = document.getElementById('timeline-process-section');
+        if (servicesSection) {
+          servicesSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 120);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   return (
@@ -62,28 +71,28 @@ export default function Footer({ onViewChange }: FooterProps) {
           <h4 className="font-mono text-xs uppercase tracking-[0.25em] text-luxury-gold">Navigate</h4>
           <ul className="flex flex-col space-y-3 font-sans text-sm text-zinc-600">
             <li>
-              <button onClick={() => navTo('home')} className="hover:text-[#0B0B0B] transition-colors duration-200 cursor-pointer text-left">
-                The Paris Atelier
+              <button onClick={() => navTo('about')} className="hover:text-[#0B0B0B] transition-colors duration-200 cursor-pointer text-left">
+                About
               </button>
             </li>
             <li>
-              <button onClick={() => navTo('about')} className="hover:text-[#0B0B0B] transition-colors duration-200 cursor-pointer text-left">
-                Our Heritage & Core Team
+              <button onClick={() => navTo('home', true)} className="hover:text-[#0B0B0B] transition-colors duration-200 cursor-pointer text-left">
+                Services
               </button>
             </li>
             <li>
               <button onClick={() => navTo('portfolio')} className="hover:text-[#0B0B0B] transition-colors duration-200 cursor-pointer text-left">
-                Bespoke Curations
+                Portfolio
               </button>
             </li>
             <li>
               <button onClick={() => navTo('gallery')} className="hover:text-[#0B0B0B] transition-colors duration-200 cursor-pointer text-left">
-                Tactile Detail Archives
+                Gallery
               </button>
             </li>
             <li>
               <button onClick={() => navTo('contact')} className="hover:text-[#0B0B0B] transition-colors duration-200 cursor-pointer text-left">
-                Book Private Viewing
+                Contact
               </button>
             </li>
           </ul>
@@ -94,12 +103,12 @@ export default function Footer({ onViewChange }: FooterProps) {
           <h4 className="font-mono text-xs uppercase tracking-[0.25em] text-luxury-gold">Coordinates</h4>
           <div className="space-y-4 font-sans text-sm leading-relaxed text-zinc-650">
             <div>
-              <p className="text-[#0B0B0B] font-medium">Paris Atelier</p>
-              <p className="text-xs text-zinc-550">14 Rue de la Paix, 75002 Paris, France</p>
+              <p className="text-[#0B0B0B] font-medium">Main Office Location</p>
+              <p className="text-xs text-zinc-550">Lagos, Nigeria</p>
             </div>
             <div>
-              <p className="text-[#0B0B0B] font-medium">New York Salon</p>
-              <p className="text-xs text-zinc-550">72 Mercer Street, Soho, New York 10012</p>
+              <p className="text-[#0B0B0B] font-medium">Expected Response Time</p>
+              <p className="text-xs text-zinc-550">Usually within 24 hours</p>
             </div>
             <div>
               <p className="text-[#0B0B0B] font-medium">Visiting Hours</p>
