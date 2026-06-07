@@ -101,7 +101,7 @@ export default function CaseStudyView({ item, onViewChange }: CaseStudyViewProps
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
           <div className="lg:col-span-8 space-y-4">
             <span className="font-mono text-luxury-gold text-xs uppercase tracking-[0.3em] block">
-              CASE ARCHIVE // LATEST PRESENTATION
+              PORTFOLIO // PROJECT DETAIL
             </span>
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#0B0B0B] font-bold leading-tight">
               {item.title}
@@ -163,7 +163,7 @@ export default function CaseStudyView({ item, onViewChange }: CaseStudyViewProps
         <div className="lg:col-span-5 bg-white border border-zinc-200 p-8 flex flex-col justify-between">
           <div className="space-y-6">
             <h3 className="font-mono text-xs uppercase tracking-[0.25em] text-luxury-gold border-b border-zinc-200 pb-4">
-              Atelier Services Utilized
+              Studio Services Utilized
             </h3>
             <ul className="space-y-3 font-sans text-sm text-zinc-700">
               {item.services.map((service, idx) => (
@@ -178,7 +178,7 @@ export default function CaseStudyView({ item, onViewChange }: CaseStudyViewProps
           <div className="pt-8 border-t border-zinc-200 mt-8 space-y-4 text-zinc-500 font-sans text-xs">
             <div className="flex items-center space-x-2">
               <Shield className="w-4 h-4 text-luxury-gold flex-shrink-0" />
-              <span>COMMISSION COMPLIANT WITH DESIGN PATENTS</span>
+              <span>DESIGN REVIEW & RIGHTS REGISTERED</span>
             </div>
           </div>
         </div>
@@ -189,13 +189,13 @@ export default function CaseStudyView({ item, onViewChange }: CaseStudyViewProps
       <section className="py-20 px-6 max-w-7xl mx-auto" id="interactive-slider-compare-section">
         <div className="text-center space-y-4 mb-12">
           <span className="font-mono text-xs uppercase tracking-[0.3em] text-luxury-gold block">
-            VISUAL METAMORPHOSIS
+            DESIGN PROGRESS
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl text-[#0B0B0B] font-semibold">
-            Draft Sketch vs Tactile Gilding
+            Design Sketch vs Final Print
           </h2>
           <p className="text-zinc-600 font-sans text-sm max-w-lg mx-auto">
-            Swipe the center golden bar to view the transition from initial calligraphic pencil-draft to final physically stamped hot-gold embossing.
+            Swipe the center bar to view the transition from initial pencil sketch to final high-resolution design and application.
           </p>
         </div>
 
@@ -216,7 +216,7 @@ export default function CaseStudyView({ item, onViewChange }: CaseStudyViewProps
               referrerPolicy="no-referrer"
             />
             <div className="absolute bottom-4 left-4 bg-black/80 px-3 py-1.5 font-mono text-[9px] text-zinc-400 tracking-wider">
-              STAGE 01: INTUITION PEN SKETCH
+              STAGE 01: INITIAL SKETCH
             </div>
           </div>
 
@@ -233,7 +233,7 @@ export default function CaseStudyView({ item, onViewChange }: CaseStudyViewProps
                  referrerPolicy="no-referrer"
               />
               <div className="absolute bottom-4 left-4 bg-[#D4AF37] text-primary-dark font-mono text-[9px] font-bold tracking-wider px-3 py-1.5">
-                STAGE 05: FINISHED GILDED COMMISSION
+                STAGE 02: COMPLETED DESIGN
               </div>
             </div>
           </div>
@@ -259,7 +259,7 @@ export default function CaseStudyView({ item, onViewChange }: CaseStudyViewProps
 
           <div className="max-w-3xl space-y-6 relative z-10">
             <span className="font-mono text-xs uppercase tracking-[0.25em] text-luxury-gold block">
-              PATRON ASSURANCE
+              CLIENT TRUST
             </span>
             <p className="font-serif text-lg sm:text-xl md:text-2xl text-zinc-700 leading-relaxed italic">
               "{projectTestimonial.quote}"

@@ -186,11 +186,11 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
             {/* Left: Magazine layout columns */}
             <div className="lg:col-span-5 space-y-8 relative">
               <span className="font-mono text-xs uppercase tracking-[0.3em] text-luxury-gold block">
-                CHAPTER I / HISTORIC FOCUS
+                OUR STORY
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#0B0B0B] tracking-tight leading-tight font-bold">
-                The Art Behind <br/>
-                Every Mark.
+                The Story Behind <br/>
+                Every Design.
               </h2>
               
               <div className="border-l border-luxury-gold/50 pl-6 space-y-4">
@@ -205,15 +205,15 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
             <div className="lg:col-span-7 space-y-6 text-zinc-700 font-sans text-sm leading-relaxed">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="space-y-4">
-                  <h3 className="text-[#0B0B0B] text-base font-serif font-semibold tracking-wider">Identity & Heritage</h3>
+                  <h3 className="text-[#0B0B0B] text-base font-serif font-semibold tracking-wider">Our Approach</h3>
                   <p>
-                    Throughout history, the elite marked their precious textiles, stone fortresses, and diplomatic letters with personalized monograms. We elevate this heritage, designing custom cyphers that encapsulate centuries of familial dignity in a pure, modern formulation.
+                    Throughout history, monograms have been used as powerful symbols of identity and enduring heritage. We elevate this tradition, designing custom marks that encapsulate your personal story, values, and reputation in a clean, modern design.
                   </p>
                 </div>
                 <div className="space-y-4 pt-4 sm:pt-0">
-                  <h3 className="text-[#0B0B0B] text-base font-serif font-semibold tracking-wider">Meticulous Craftsmanship</h3>
+                  <h3 className="text-[#0B0B0B] text-base font-serif font-semibold tracking-wider">Our Process</h3>
                   <p>
-                    Every vector, ligature, and terminal curve is hand-crafted. Our process values deliberate slowness over high-speed mass production. We draft sketches on quality heavy paper and analyze them through classic mirrors to guarantee spatial balance before editing digitally.
+                    Every line, curve, and layout is hand-drawn and refined with utmost precision. Our design process values careful planning and intentional balance. We begin with sketches on premium paper and analyze the geometry before perfecting and rendering the design digitally.
                   </p>
                 </div>
               </div>
@@ -230,7 +230,7 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
                   className="group flex items-center space-x-2 text-xs uppercase tracking-[0.2em] text-[#0B0B0B] hover:text-luxury-gold transition-colors font-medium cursor-pointer"
                   id="story-read-chronicle-btn"
                 >
-                  <span>Learn Our Philosophy</span>
+                  <span>Learn More About Us</span>
                   <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                 </button>
               </div>
@@ -338,10 +338,10 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16">
             <div className="space-y-4">
               <span className="font-mono text-xs uppercase tracking-[0.3em] text-luxury-gold block">
-                MASTER CURATIONS
+                Portfolio
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#0B0B0B] font-bold tracking-tight">
-                Selected Commissions
+                Featured Projects
               </h2>
             </div>
             <button
@@ -352,7 +352,7 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
               className="text-xs uppercase tracking-[0.25em] text-[#D4AF37] hover:text-[#0B0B0B] transition-colors duration-200 mt-6 md:mt-0 font-semibold cursor-pointer focus:outline-none"
               id="view-all-creations-btn"
             >
-              Examine Full Archive (6) →
+              View All Projects (6) →
             </button>
           </div>
 
@@ -397,7 +397,7 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
                   </div>
                   
                   <div className="mt-6 pt-4 border-t border-zinc-200 flex items-center justify-between text-xs font-mono uppercase tracking-widest text-zinc-500 group-hover:text-luxury-gold transition-colors">
-                    <span>Examine Case Presentation</span>
+                    <span>View Project Details</span>
                     <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </div>
                 </div>
@@ -415,13 +415,13 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
           <div className="text-center space-y-4 mb-16">
             <span className="font-mono text-xs uppercase tracking-[0.3em] text-luxury-gold flex items-center justify-center">
               <Compass className="w-4 h-4 mr-2" />
-              PEDIGREE STEPS
+              OUR PROCESS
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#0B0B0B] font-bold tracking-tight">
-              A Line of Pure Intention
+              A Design Process of Absolute Precision
             </h2>
             <p className="text-zinc-700 text-sm max-w-xl mx-auto font-sans leading-relaxed">
-              Our unique five-stage signature creation trajectory guarantees mathematical grace combined with historical exclusivity.
+              Our unique five-stage signature creation trajectory guarantees design harmony combined with exceptional detail.
             </p>
           </div>
 
@@ -501,10 +501,10 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
           
           <div className="text-center space-y-4 mb-16">
             <span className="font-mono text-xs uppercase tracking-[0.3em] text-luxury-gold block">
-              PATRON TESTIMONIALS
+              CLIENT REVIEWS
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl text-[#0B0B0B] font-semibold tracking-tight">
-              In Words of Our Clients
+              In the Words of Our Clients
             </h2>
           </div>
 
@@ -546,7 +546,7 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
       <section className="py-16 px-6 bg-primary-dark border-t border-zinc-200 select-none" id="client-trust-section">
         <div className="max-w-7xl mx-auto">
           <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-zinc-500 text-center mb-10">
-            ENDORSED BY LEADING MAISON LABELS & PRIVATE FAMILIES
+            TRUSTED BY LEADING BRANDS & PRIVATE FAMILIES
           </p>
           
           <div className="flex flex-wrap items-center justify-around gap-8 opacity-60 grayscale contrast-125">
@@ -568,7 +568,7 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
           
           <span className="font-mono text-xs uppercase tracking-[0.3em] text-luxury-gold flex items-center justify-center">
             <Award className="w-4 h-4 mr-2" />
-            SECURE A PRIVATE BOOKING
+            START YOUR PROJECT
           </span>
 
           <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#0B0B0B] leading-tight tracking-normal font-bold">
@@ -579,7 +579,7 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
           </h2>
           
           <p className="text-sm text-zinc-700 font-sans max-w-xl mx-auto leading-relaxed">
-            Due to our commitment to absolute detail and traditional penmanship, Tobi Adesina maintains a strict allocation schedule of only 24 large commissions per calendar year. Request a private review of your requirements.
+            Due to our commitment to absolute detail and traditional penmanship, Tobi Adesina maintains a strict schedule of only 24 large projects per calendar year. Request a review of your design requirements.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
@@ -591,7 +591,7 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
               className="w-full sm:w-auto flex items-center justify-center space-x-3 text-xs uppercase tracking-[0.25em] text-[#0B0B0B] bg-luxury-gold hover:bg-[#0B0B0B] hover:text-white transition-colors duration-300 px-8 py-4 font-semibold cursor-pointer rounded-none"
               id="cta-contact-btn"
             >
-              <span>Submit Project Proposal</span>
+              <span>Start Your Project</span>
               <ArrowUpRight className="w-4 h-4" />
             </button>
             
@@ -608,7 +608,7 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
           </div>
 
           <p className="text-[10px] font-mono text-emerald-500/80 uppercase tracking-widest pt-2">
-            ● Atelier current booking status: Slots open for Q3 & Q4 2025
+            ● Studio current booking status: Slots open for next quarter
           </p>
 
         </div>

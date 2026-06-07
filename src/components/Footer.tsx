@@ -155,8 +155,8 @@ export default function Footer({ onViewChange }: FooterProps) {
       <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-zinc-250 flex flex-col md:flex-row items-center justify-between text-zinc-500 font-mono text-[10px] tracking-widest">
         <span>© {new Date().getFullYear()} MONOGRAM DESIGN STUDIO. ALL RIGHTS RESERVED.</span>
         <div className="flex space-x-6 mt-4 md:mt-0">
-          <a href="#terms" className="hover:text-luxury-gold transition-colors duration-200">TERMS & CONDITIONS</a>
-          <a href="#privacy" className="hover:text-luxury-gold transition-colors duration-200">PRIVACY POLICY</a>
+          <button onClick={() => navTo('terms')} className="hover:text-luxury-gold transition-colors duration-200 cursor-pointer focus:outline-none uppercase">TERMS & CONDITIONS</button>
+          <button onClick={() => navTo('privacy')} className="hover:text-luxury-gold transition-colors duration-200 cursor-pointer focus:outline-none uppercase">PRIVACY POLICY</button>
         </div>
       </div>
     </footer>

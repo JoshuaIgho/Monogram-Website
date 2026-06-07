@@ -39,16 +39,16 @@ export default function AboutView({ onViewChange }: AboutViewProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
           <div className="lg:col-span-8 space-y-4">
             <span className="font-mono text-zinc-500 text-xs uppercase tracking-[0.3em] block">
-              COSMIC SYNERGIES • ESTABLISHED HISTORICALLY
+              FINE DESIGN • ESTABLISHED IN LAGOS
             </span>
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#0B0B0B] font-bold leading-tight">
-              The Pedigree of <br/>
+              The Story of <br/>
               <span className="text-luxury-gold italic gold-glow">Tobi Adesina</span> Studio
             </h1>
           </div>
           <div className="lg:col-span-4 lg:pb-2">
             <p className="text-zinc-700 font-sans text-sm leading-relaxed">
-              We are an award-winning boutique studio. We design custom brand heraldry, bespoke digital monograms, and physical wax seal packages for royalty, fashion maisons, and high-end enterprises.
+              We are a premium boutique studio. We design custom brand identities, bespoke digital monograms, and premium assets for distinguished brands and families.
             </p>
           </div>
         </div>
@@ -137,10 +137,10 @@ export default function AboutView({ onViewChange }: AboutViewProps) {
       <section className="py-24 px-6 max-w-7xl mx-auto" id="journey-timeline-section">
         <div className="space-y-4 mb-20 text-center">
           <span className="font-mono text-xs uppercase tracking-[0.3em] text-luxury-gold block">
-            THE CHRONOLOGY
+            OUR JOURNEY
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl text-[#0B0B0B] font-semibold">
-            Honorable Studio Journey
+            The Studio Journey
           </h2>
         </div>
 
@@ -188,10 +188,10 @@ export default function AboutView({ onViewChange }: AboutViewProps) {
       <section className="py-16 px-6 max-w-5xl mx-auto text-center" id="about-pitch-card">
         <div className="bg-white/90 border border-zinc-200 p-12 backdrop-blur-md space-y-8">
           <h3 className="font-serif text-2xl sm:text-3xl text-[#0B0B0B] font-medium">
-            Commission a Signature Heirloom
+            Start Your Custom Design
           </h3>
           <p className="text-zinc-700 text-sm font-sans leading-relaxed max-w-xl mx-auto">
-            Ready to explore an interlocking identity for your residence, family ledger, or boutique enterprise? Tobi Adesina offers direct scheduled audio consults.
+            Ready to create a custom monogram or visual identity for your brand, family estate, or boutique enterprise? Book a visual consultation with Tobi Adesina.
           </p>
           <button
             onClick={() => {
@@ -201,7 +201,7 @@ export default function AboutView({ onViewChange }: AboutViewProps) {
             className="flex items-center justify-center space-x-3 text-xs uppercase tracking-[0.25em] text-[#0B0B0B] bg-luxury-gold hover:bg-[#0B0B0B] hover:text-white transition-colors duration-300 px-6 py-4 font-semibold cursor-pointer rounded-none mx-auto"
             id="about-pitch-cta-btn"
           >
-            <span>Request Private Consult</span>
+            <span>Book a Consultation</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
           </button>
         </div>

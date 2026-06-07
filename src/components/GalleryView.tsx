@@ -28,13 +28,13 @@ export default function GalleryView({ onViewChange }: GalleryViewProps) {
         <div className="space-y-4 max-w-3xl">
           <span className="font-mono text-zinc-500 text-xs uppercase tracking-[0.3em] flex items-center">
             <ImageIcon className="w-4 h-4 mr-2 text-luxury-gold" />
-            TACTILE MACRO EXPERIENCE
+            DESIGN DETAILS
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#0B0B0B] font-bold leading-none">
-            Tactile Archives
+            Gallery & Details
           </h1>
           <p className="text-zinc-700 font-sans text-sm leading-relaxed">
-            Delive into high-contrast visual narratives. Through dramatic low-key spotlights, examine the micro-details of linen paper fibers, steel nib penstrokes, high-precision metal carvings, and gold silk embroidery.
+            Explore our design details and materials. From fine sketching and traditional ink strokes to high-precision engraving and embroidery, see how our monograms translate across different mediums.
           </p>
         </div>
       </section>
@@ -159,7 +159,7 @@ export default function GalleryView({ onViewChange }: GalleryViewProps) {
                 <div className="space-y-6">
                   <span className="font-mono text-zinc-500 text-xs uppercase tracking-[0.25em] flex items-center">
                     <CheckCircle2 className="w-4 h-4 mr-2 text-luxury-gold" />
-                    Archive Curation Spec
+                    Project Details
                   </span>
                   
                   <div className="space-y-2">
@@ -176,12 +176,12 @@ export default function GalleryView({ onViewChange }: GalleryViewProps) {
                   </p>
 
                   <div className="border-t border-zinc-200 pt-4 space-y-4">
-                    <h4 className="font-mono text-[10px] uppercase tracking-widest text-luxury-gold">Technical Analysis</h4>
+                    <h4 className="font-mono text-[10px] uppercase tracking-widest text-luxury-gold">Design Specifications</h4>
                     <ul className="font-mono text-[9px] text-zinc-500 space-y-2 tracking-widest uppercase">
-                      <li>• Dynamic range lighting: Dramatic side spotlight</li>
-                      <li>• Substrate test: 100% fine cotton fiber</li>
-                      <li>• Color index: Charcoal gray and real metallic gold alloy</li>
-                      <li>• Render mode: Hand sketches scanned to vector mathematics</li>
+                      <li>• Medium: Digital vector & physical prints</li>
+                      <li>• Materials: Premium paper, engravings, or embroidery</li>
+                      <li>• Color Palette: Soft charcoal, gold accents, and warm off-whites</li>
+                      <li>• Process: Hand-drawn sketching converted to high-resolution vectors</li>
                     </ul>
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export default function GalleryView({ onViewChange }: GalleryViewProps) {
                     className="w-full text-center text-xs uppercase tracking-[0.2em] text-[#0B0B0B] bg-luxury-gold hover:bg-[#0B0B0B] hover:text-white px-6 py-4 font-semibold active:scale-95 duration-200 cursor-pointer transition-colors duration-300"
                     id="lightbox-cta-btn"
                   >
-                    Discuss Custom Materials
+                    Discuss Your Project
                   </button>
                 </div>
 

@@ -43,4 +43,4 @@ export interface ProcessStep {
   detail: string;
 }
 
-export type ViewType = 'home' | 'about' | 'portfolio' | 'casestudy' | 'gallery' | 'contact';
+export type ViewType = 'home' | 'about' | 'portfolio' | 'casestudy' | 'gallery' | 'contact' | 'terms' | 'privacy';

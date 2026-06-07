@@ -189,31 +189,31 @@ export const processSteps: ProcessStep[] = [
   {
     number: '01',
     title: 'Discovery & Consultation',
-    description: 'We explore your identity, family heritage, and digital needs.',
-    detail: 'Every project begins with a 1-on-1 dialogue in our Lagos design studio, or over a premium secure video line. We deep-dive into your personal history, company vision, tactile paper preferences, and typography taste to design a comprehensive strategy document.'
+    description: 'We explore your identity, vision, and branding needs.',
+    detail: 'Every project begins with a 1-on-1 consultation in our Lagos design studio, or via video conferencing. We deep-dive into your personal history, company vision, layout preferences, and brand goals to establish a clear design strategy.'
   },
   {
     number: '02',
     title: 'Concept & Pen Sketching',
-    description: 'Classic calligraphic pen drafts that reveal organic balance.',
-    detail: 'Our master craftsmen sketch three entirely distinct monogram layouts by hand, using premium Indian black inks and traditional steel-nib pens. This stage allows the dynamic loops, ligatures, and typographic weight to form organically before we transition to digital work.'
+    description: 'Classic pencil and ink drafts that reveal organic balance.',
+    detail: 'Our design team sketches entirely distinct concepts by hand, using premium ink and paper. This stage allows the dynamic loops, ligatures, and typographic weight to form naturally and with human warmth before we transition to digital design.'
   },
   {
     number: '03',
     title: 'Digital Refinement & Vector Geometry',
-    description: 'Precision digital modeling ensuring perfect vector metrics.',
-    detail: 'The chosen sketch is imported into high-fidelity CAD engines. Our digital artists meticulously refine every anchor point and bezier curve, implementing sacred geometries and divine golden ratios for impeccable scalability and visual purity.'
+    description: 'Precision digital modeling ensuring perfect vector scales.',
+    detail: 'The chosen sketch is converted into high-fidelity digital vectors. We meticulously refine every anchor point and bezier curve, implementing precise layouts and visual ratios for perfect scalability and crisp, clean display.'
   },
   {
     number: '04',
-    title: 'Tactile Application & Materials',
-    description: 'Matching digital brilliance to high-end physically debossed elements.',
-    detail: 'We prepare custom stamp matrices for letterpress printing, gold hot-stamping, linen embroidery, or wax seals. We coordinate with elite printers globally to ensure the final physically debossed product feels as majestic as the on-screen render.'
+    title: 'Medium Application & Testing',
+    description: 'Testing designs across different digital and physical mediums.',
+    detail: 'We prepare the designs for letterpress printing, gold hot-stamping, embroidery, or engraving. We coordinate with elite printing partners to ensure the final physically debossed or embroidered products feel as pristine as the on-screen digital versions.'
   },
   {
     number: '05',
-    title: 'Final Delivery & Motion Suite',
-    description: 'A unified luxury asset kit, complete with custom animations.',
-    detail: 'Your monogram is delivered in all scalable and digital vector formats, accompanied by a premium and detailed brand guideline book and an interactive animated motion file, ready to immortalize your brand across both physical luxury substrates and digital horizons.'
+    title: 'Final Delivery & Brand Assets',
+    description: 'A unified high-resolution asset kit ready for immediate use.',
+    detail: 'Your custom design is delivered in all scalable digital and vector formats. Along with the master files, we provide a clean, modern brand guide outlining how to use and preserve your new identity across different digital platforms and print materials.'
   }
 ];

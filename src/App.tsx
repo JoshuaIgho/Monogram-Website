@@ -14,6 +14,8 @@ import PortfolioView from './components/PortfolioView';
 import CaseStudyView from './components/CaseStudyView';
 import GalleryView from './components/GalleryView';
 import ContactView from './components/ContactView';
+import TermsView from './components/TermsView';
+import PrivacyView from './components/PrivacyView';
 
 export default function App() {
   const [currentView, setCurrentView] = useState<ViewType>('home');
@@ -59,6 +61,10 @@ export default function App() {
         return <GalleryView onViewChange={setCurrentView} />;
       case 'contact':
         return <ContactView onViewChange={setCurrentView} />;
+      case 'terms':
+        return <TermsView onViewChange={setCurrentView} />;
+      case 'privacy':
+        return <PrivacyView onViewChange={setCurrentView} />;
       default:
         return (
           <HomeView

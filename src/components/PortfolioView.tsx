@@ -34,13 +34,13 @@ export default function PortfolioView({ onViewChange, onSelectCaseStudy }: Portf
         <div className="space-y-4 max-w-3xl">
           <span className="font-mono text-zinc-500 text-xs uppercase tracking-[0.3em] flex items-center">
             <Sparkles className="w-3.5 h-3.5 mr-2 text-luxury-gold" />
-            BESPOKE MONOGRAM CHRONICLES
+            STUDIO PROJECTS
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#0B0B0B] font-bold leading-none">
-            Master Curations
+            Portfolio
           </h1>
           <p className="text-zinc-700 font-sans text-sm leading-relaxed">
-            Our portfolio showcases our highest caliber commissions. From gold-alloy wax seals for boutique spirits label distillers to responsive digital motion headers, every design represents rigorous geometry and artisanal prestige.
+            Our portfolio showcases our featured designs. From custom monograms and prestige brandmarks to digital identity systems, every design represents rigorous geometry and creative excellence.
           </p>
         </div>
       </section>
@@ -52,7 +52,7 @@ export default function PortfolioView({ onViewChange, onSelectCaseStudy }: Portf
         <div className="flex overflow-x-auto min-w-full md:min-w-0 md:flex-wrap items-center gap-2 pb-3 md:pb-0 scrollbar-none snap-x snap-mandatory">
           <div className="flex items-center space-x-2 mr-3 font-mono text-xs text-zinc-500 uppercase tracking-widest flex-shrink-0">
             <SlidersHorizontal className="w-3.5 h-3.5 text-luxury-gold" />
-            <span>Curate:</span>
+            <span>Filter:</span>
           </div>
           
           {categories.map((cat) => (
@@ -74,7 +74,7 @@ export default function PortfolioView({ onViewChange, onSelectCaseStudy }: Portf
         {/* Counter Grid Indicator */}
         <div className="flex items-center space-x-2 text-zinc-500 font-mono text-xs">
           <Grid className="w-4 h-4" />
-          <span>DISPLAYING {filteredItems.length} OF {portfolioItems.length} ARTIFACTS</span>
+          <span>SHOWING {filteredItems.length} OF {portfolioItems.length} PROJECTS</span>
         </div>
       </section>
 
@@ -129,7 +129,7 @@ export default function PortfolioView({ onViewChange, onSelectCaseStudy }: Portf
                   </div>
 
                   <div className="mt-6 pt-4 border-t border-zinc-200 flex items-center justify-between text-[10px] font-mono uppercase tracking-widest text-zinc-500 group-hover:text-luxury-gold">
-                    <span>Examine Case Presentation</span>
+                    <span>View Project Details</span>
                     <ArrowUpRight className="w-3.5 h-3.5 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </div>
                 </div>
@@ -141,7 +141,7 @@ export default function PortfolioView({ onViewChange, onSelectCaseStudy }: Portf
 
         {filteredItems.length === 0 && (
           <div className="py-24 text-center space-y-4">
-            <p className="text-zinc-500 font-mono text-sm uppercase tracking-widest">Atelier archives are compiling this category.</p>
+            <p className="text-zinc-500 font-mono text-sm uppercase tracking-widest">No projects found in this category.</p>
             <button
               onClick={() => setSelectedCategory('All')}
               className="text-luxury-gold hover:text-white font-mono text-xs uppercase underline tracking-widest"
