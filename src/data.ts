@@ -141,23 +141,23 @@ export const galleryItems: GalleryItem[] = [
 export const studioMilestones: Milestone[] = [
   {
     year: '2018',
-    title: 'Inception in Paris',
-    description: 'Founded by Elise Moreau as a high-end calligraphy atelier catering to legacy European fashion houses.'
+    title: 'Founding in Lagos',
+    description: 'Founded by Tobi Adesina as a boutique lettering and calligraphy workspace, serving custom requests and bespoke wedding brandmarks in Lagos.'
   },
   {
     year: '2020',
-    title: 'Digital Metamorphosis',
-    description: 'Merged classic calligraphy rules with modern digital vectors, introducing animated monogram files for luxury iOS apps.'
+    title: 'Prestige Branding Focus',
+    description: 'Expanded into premium brandmarks and crest design, blending classic hand-drawn rules with modern precision vector models.'
   },
   {
     year: '2022',
-    title: 'London & NYC Expansion',
-    description: 'Opened secondary consult rooms in Mayfair and Manhattan, managing global corporate and individual identities.'
+    title: 'Nationwide Expansion',
+    description: 'Began consulting for high-end boutique hotels, distinguished family estates, and premium developments across Abuja, Lagos, and Port Harcourt.'
   },
   {
     year: '2024',
-    title: 'National Design Recognition',
-    description: 'Awarded the Awwwards Global Design Trophy for redefining digital luxury through handcrafted identity systems.'
+    title: 'Legacy Design Recognition',
+    description: 'Established as a creative standard for luxury design, crafting custom multi-substrate monograms and identity systems for premium local enterprises.'
   }
 ];
 
@@ -170,7 +170,7 @@ export const clientTestimonials: Testimonial[] = [
     brand: "Aurelia Estates"
   },
   {
-    quote: "Elise & her team possesses a rare understanding of luxury heritage. They avoided typical corporate clichés and gave us a crest that feels older than our company.",
+    quote: "Tobi & his team possess a rare understanding of luxury heritage. They avoided typical corporate clichés and gave us a crest that feels older than our company.",
     author: "Maximilian Vane",
     role: "Creative Director",
     avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150&auto=format&fit=crop",
@@ -190,7 +190,7 @@ export const processSteps: ProcessStep[] = [
     number: '01',
     title: 'Discovery & Consultation',
     description: 'We explore your identity, family heritage, and digital needs.',
-    detail: 'Every project begins with a 1-on-1 dialogue in our Paris or New York salon, or over a premium secure video line. We deep-dive into your personal history, company vision, tactile paper preferences, and typography taste to design a comprehensive strategy document.'
+    detail: 'Every project begins with a 1-on-1 dialogue in our Lagos design studio, or over a premium secure video line. We deep-dive into your personal history, company vision, tactile paper preferences, and typography taste to design a comprehensive strategy document.'
   },
   {
     number: '02',

@@ -49,13 +49,13 @@ export default function Footer({ onViewChange }: FooterProps) {
             <span className="font-mono text-[9px] tracking-[0.3em] text-zinc-500 uppercase mt-0.5">Design Studio</span>
           </div>
           <p className="text-sm text-zinc-600 font-sans leading-relaxed max-w-sm">
-            Crafting custom brand heraldry, bespoke ligatures, and timeless digital legacies for elite organizations and private individuals globally.
+            Crafting custom brand identities, bespoke monograms, and timeless designs for distinguished organizations and private individuals.
           </p>
           <div className="flex space-x-4 pt-2 font-mono">
-            {['Instagram', 'Behance', 'Pinterest', 'Vimeo'].map((soc) => (
+            {['Instagram', 'WhatsApp', 'Facebook'].map((soc) => (
               <a
                 key={soc}
-                href={`https://${soc.toLowerCase()}.com`}
+                href={soc === 'WhatsApp' ? 'https://wa.me/2348000000000' : `https://${soc.toLowerCase()}.com`}
                 target="_blank"
                 rel="noreferrer"
                 className="text-xs font-mono tracking-widest text-zinc-500 hover:text-luxury-gold transition-colors duration-200"
@@ -98,9 +98,9 @@ export default function Footer({ onViewChange }: FooterProps) {
           </ul>
         </div>
 
-        {/* Column 3: Salons & Coordinates */}
+        {/* Column 3: Contact Information */}
         <div className="flex flex-col space-y-6">
-          <h4 className="font-mono text-xs uppercase tracking-[0.25em] text-luxury-gold">Coordinates</h4>
+          <h4 className="font-mono text-xs uppercase tracking-[0.25em] text-luxury-gold">Contact Information</h4>
           <div className="space-y-4 font-sans text-sm leading-relaxed text-zinc-650">
             <div>
               <p className="text-[#0B0B0B] font-medium">Main Office Location</p>
@@ -112,16 +112,16 @@ export default function Footer({ onViewChange }: FooterProps) {
             </div>
             <div>
               <p className="text-[#0B0B0B] font-medium">Visiting Hours</p>
-              <p className="text-xs text-zinc-550">Mon • Fri — 10:00 to 18:00 (By Invitation only)</p>
+              <p className="text-xs text-zinc-550">Mon — Fri • 10:00 to 18:00</p>
             </div>
           </div>
         </div>
 
         {/* Column 4: Private Correspondence Subscription */}
         <div className="flex flex-col space-y-6">
-          <h4 className="font-mono text-xs uppercase tracking-[0.25em] text-luxury-gold">Studio Ledger</h4>
+          <h4 className="font-mono text-xs uppercase tracking-[0.25em] text-luxury-gold">Stay Connected</h4>
           <p className="text-sm text-zinc-605 font-sans leading-relaxed">
-            Subscribe to our seasonal printed chronicle and private commission invitations.
+            Subscribe to receive our seasonal updates, design insights, and exclusive studio announcements.
           </p>
           
           <form onSubmit={handleSubscribe} className="flex flex-col space-y-2">
@@ -129,7 +129,7 @@ export default function Footer({ onViewChange }: FooterProps) {
               <input
                 type="email"
                 required
-                placeholder="PROTAGONIST@EMAIL.COM"
+                placeholder="YOUR.EMAIL@DOMAIN.COM"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full bg-transparent border-none text-xs tracking-widest text-[#0B0B0B] py-3 pr-10 focus:outline-none placeholder:text-zinc-400 font-mono uppercase"
@@ -144,7 +144,7 @@ export default function Footer({ onViewChange }: FooterProps) {
             </div>
             {subscribed && (
               <p className="text-[10px] text-emerald-600 font-mono uppercase tracking-wider animate-scale-in mt-1">
-                You are registered on our private guild ledger.
+                Thank you for subscribing to our updates.
               </p>
             )}
           </form>
@@ -153,10 +153,10 @@ export default function Footer({ onViewChange }: FooterProps) {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-zinc-250 flex flex-col md:flex-row items-center justify-between text-zinc-500 font-mono text-[10px] tracking-widest">
-        <span>© {new Date().getFullYear()} MONOGRAM DESIGN ATELIER. INC. ALL RIGHTS RESERVED.</span>
+        <span>© {new Date().getFullYear()} MONOGRAM DESIGN STUDIO. ALL RIGHTS RESERVED.</span>
         <div className="flex space-x-6 mt-4 md:mt-0">
-          <a href="#terms" className="hover:text-luxury-gold transition-colors duration-200">TERMS OF PATRONAGE</a>
-          <a href="#privacy" className="hover:text-luxury-gold transition-colors duration-200">PRIVACY CHARTER</a>
+          <a href="#terms" className="hover:text-luxury-gold transition-colors duration-200">TERMS & CONDITIONS</a>
+          <a href="#privacy" className="hover:text-luxury-gold transition-colors duration-200">PRIVACY POLICY</a>
         </div>
       </div>
     </footer>

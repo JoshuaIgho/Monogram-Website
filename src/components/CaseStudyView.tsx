@@ -33,9 +33,9 @@ export default function CaseStudyView({ item, onViewChange }: CaseStudyViewProps
   if (!item) {
     return (
       <div className="py-32 text-center text-zinc-500 font-mono">
-        <p>No project was loaded. Please navigate back to Curate.</p>
+        <p>No project was loaded. Please return to the portfolio page.</p>
         <button onClick={() => onViewChange('portfolio')} className="mt-4 text-luxury-gold underline">
-          Refrain Back
+          Back to Portfolio
         </button>
       </div>
     );
@@ -95,7 +95,7 @@ export default function CaseStudyView({ item, onViewChange }: CaseStudyViewProps
           id="casestudy-back-to-portfolio"
         >
           <ArrowLeft className="w-4 h-4" />
-          <span>Back to Master Curations</span>
+          <span>Back to Portfolio</span>
         </button>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
@@ -291,7 +291,7 @@ export default function CaseStudyView({ item, onViewChange }: CaseStudyViewProps
           id="case-study-bottom-back-btn"
         >
           <ArrowLeft className="w-4 h-4" />
-          <span>Return To Master Curations</span>
+          <span>Back to Portfolio</span>
         </button>
       </section>
 

@@ -197,7 +197,7 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
                 <p className="text-sm font-sans text-zinc-800 leading-relaxed italic">
                   "A monogram is not a collection of letters. It is a marriage of lines, an extraction of values, and a physical sigil of legacy designed to outlive its bearer."
                 </p>
-                <p className="text-xs font-mono text-zinc-500 uppercase tracking-widest">— Elise Moreau, Founder</p>
+                <p className="text-xs font-mono text-zinc-500 uppercase tracking-widest">— Tobi Adesina, Founder</p>
               </div>
             </div>
 
@@ -251,7 +251,7 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
               <div className="absolute inset-0 bg-luxury-gold/5 -translate-x-3 translate-y-3 pointer-events-none border border-luxury-gold/20" />
               <img
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuByazScbuf-auAC3ecexMuzsnT648F8FvdXuMe5jx2sHO63r7DKpTaxFJTpSkgtcBz6fvxFccypxQYmzcs2KnvseQYeBRlRAw4xS8ydQUdeAviPsxXHUjytOV_4vfJrMIqPQvpgvvs64Q-2wym7ruKJLWcoplQ0k_iogc6QbOtzmkoN1mqG3B8LjjxH4Jo06VuQSgES30tulE5eaoNnRoI91i4AiCPoJMEsQK5aNKjnyc8ILlH8hXjcUbALjCTZKrzsKXtNSItGoWbH"
-                alt="Elise Moreau working in luxury sketching workshop"
+                alt="Tobi Adesina working in luxury sketching workshop"
                 className="w-full object-cover aspect-[4/5] grayscale hover:grayscale-0 transition-all duration-700 ease-in-out border border-zinc-200"
                 referrerPolicy="no-referrer"
               />
@@ -264,13 +264,13 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
             <div className="lg:col-span-7 space-y-10">
               <div className="space-y-4">
                 <span className="font-mono text-xs uppercase tracking-[0.3em] text-luxury-gold block">
-                  MADE IN PARIS • REFINED IN NEW YORK
+                  ESTABLISHED IN LAGOS • CRAFTED FOR PRESTIGE
                 </span>
                 <h2 className="font-serif text-3xl sm:text-4xl text-[#0B0B0B] font-semibold leading-tight">
                   A Relentless Quest for Aesthetic Harmony.
                 </h2>
                 <p className="text-zinc-700 text-sm leading-relaxed font-sans">
-                  Founded by Elise Moreau, Monogram Design Studio represents the perfect cross-over of fine fine-art penmanship and industrial layout math. By strictly limiting our bookings to just 24 bespoke commissions a year, we dedicate absolute concentration to designing emblems that resonate with authority and heritage.
+                  Founded by Tobi Adesina, Monogram Design Studio represents the perfect cross-over of fine-art penmanship and precise visual geometry. By strictly limiting our bookings to just 24 bespoke commissions a year, we dedicate absolute concentration to designing emblems that resonate with authority and heritage.
                 </p>
               </div>
 
@@ -579,7 +579,7 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
           </h2>
           
           <p className="text-sm text-zinc-700 font-sans max-w-xl mx-auto leading-relaxed">
-            Due to our commitment to absolute detail and historical penmanship, Elise Moreau maintains a strict allocation schedule of only 24 large commissions per calendar year. Request a private review of your requirements.
+            Due to our commitment to absolute detail and traditional penmanship, Tobi Adesina maintains a strict allocation schedule of only 24 large commissions per calendar year. Request a private review of your requirements.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
@@ -596,7 +596,7 @@ export default function HomeView({ onViewChange, onSelectCaseStudy }: HomeViewPr
             </button>
             
             <a
-              href="https://wa.me/123456789"
+              href="https://wa.me/2348000000000"
               target="_blank"
               rel="noreferrer"
               className="w-full sm:w-auto flex items-center justify-center space-x-3 text-xs uppercase tracking-[0.25em] text-[#0B0B0B] hover:text-white bg-secondary-dark hover:bg-[#0B0B0B] border border-zinc-300 transition-all duration-300 px-8 py-4 font-semibold cursor-pointer rounded-none"
