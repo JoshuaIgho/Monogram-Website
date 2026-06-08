@@ -137,9 +137,9 @@ export default function PrivacyView({ onViewChange }: PrivacyViewProps) {
             </p>
             <div className="pl-9 pt-2">
               <div className="bg-[#EFECE6] p-6 inline-block border border-zinc-200 text-xs font-mono tracking-widest text-[#0B0B0B] space-y-2 uppercase">
-                <p>● Monogram Design Studio</p>
+                <p>● IJITUYI SIGNATURE</p>
                 <p>● Lagos, Nigeria</p>
-                <p>● Contact: hello@businessname.com</p>
+                <p>● Contact: ijituyiidowu@gmail.com</p>
               </div>
             </div>
           </div>

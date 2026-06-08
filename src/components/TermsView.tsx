@@ -59,7 +59,7 @@ export default function TermsView({ onViewChange }: TermsViewProps) {
               Intellectual Property & Ownership
             </h2>
             <p className="text-zinc-650 font-sans text-sm leading-relaxed pl-9">
-              All visual designs, typography layouts, interactive comparison sliders, high-fidelity gallery media, graphics, source codes, and branding elements present on this website are the intellectual property of Monogram Design Studio. Reproducing, republishing, or redistributing our signature monograms or artwork without written consent represents an infringement under local and international intellectual property laws.
+              All visual designs, typography layouts, interactive comparison sliders, high-fidelity gallery media, graphics, source codes, and branding elements present on this website are the intellectual property of IJITUYI SIGNATURE. Reproducing, republishing, or redistributing our signature monograms or artwork without written consent represents an infringement under local and international intellectual property laws.
             </p>
           </div>
 
@@ -79,7 +79,7 @@ export default function TermsView({ onViewChange }: TermsViewProps) {
               Design Proposals & Creative Process
             </h2>
             <p className="text-zinc-650 font-sans text-sm leading-relaxed pl-9">
-              Our signature workflow involves bespoke hand-sketching followed by digitization. Initial design directions, interactive prototypes, and drafts shared during the iterative process remain the exclusive property of Monogram Design Studio. Final high-resolution vector archives and copyrights are formally transferred only upon full settlement of the agreed project fees.
+              Our signature workflow involves bespoke hand-sketching followed by digitization. Initial design directions, interactive prototypes, and drafts shared during the iterative process remain the exclusive property of IJITUYI SIGNATURE. Final high-resolution vector archives and copyrights are formally transferred only upon full settlement of the agreed project fees.
             </p>
           </div>
 
@@ -99,7 +99,7 @@ export default function TermsView({ onViewChange }: TermsViewProps) {
               Limitation of Liability
             </h2>
             <p className="text-zinc-650 font-sans text-sm leading-relaxed pl-9">
-              While we guarantee absolute creative precision and rigorous technical safety across our digital assets, Monogram Design Studio shall not be liable for any direct or indirect damages, losses, or print-material production errors once final vector assets are reviewed and formally signed off by the client.
+              While we guarantee absolute creative precision and rigorous technical safety across our digital assets, IJITUYI SIGNATURE shall not be liable for any direct or indirect damages, losses, or print-material production errors once final vector assets are reviewed and formally signed off by the client.
             </p>
           </div>
 

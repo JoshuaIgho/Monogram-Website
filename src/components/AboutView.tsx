@@ -43,7 +43,7 @@ export default function AboutView({ onViewChange }: AboutViewProps) {
             </span>
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-[#0B0B0B] font-bold leading-tight">
               The Story of <br/>
-              <span className="text-luxury-gold italic gold-glow">Tobi Adesina</span> Studio
+              <span className="text-luxury-gold italic gold-glow">IJITUYI SIGNATURE</span>
             </h1>
           </div>
           <div className="lg:col-span-4 lg:pb-2">
@@ -82,10 +82,10 @@ export default function AboutView({ onViewChange }: AboutViewProps) {
             </h2>
             <div className="space-y-6 text-zinc-700 font-sans text-sm leading-relaxed">
               <p>
-                Tobi Adesina began his career studying traditional lettering and classical design under master calligraphers, honing his skills hand-drawing elegant scripts for premium events and bespoke identity commissions in Lagos. He observed early on that sterile digital fonts stripped emblems of their individual warmth and organic balance.
+                Ijituyi Idowu Temitope began his career studying traditional lettering and classical design, honing his skills hand-drawing elegant scripts for premium events and bespoke identity commissions in Lagos. He observed early on that sterile digital fonts stripped emblems of their individual warmth and organic balance.
               </p>
               <p>
-                "Lines drawn purely by digital code are often dry and mechanical. But hand-sketched ink, guided by organic flow and microscopic human variation, has a distinct soul," Tobi explains. Thus, he developed his signature hybrid design workflow: starting on heavy paper with traditional steel-nib pens, capturing organic harmony, and then meticulously rendering the artwork within premium vector engines.
+                "Lines drawn purely by digital code are often dry and mechanical. But hand-sketched ink, guided by organic flow and microscopic human variation, has a distinct soul," Ijituyi explains. Thus, he developed his signature hybrid design workflow: starting on heavy paper with traditional steel-nib pens, capturing organic harmony, and then meticulously rendering the artwork within premium vector engines.
               </p>
               <p>
                 Our studio operates directly from Lagos, Nigeria, delivering premium, hand-crafted design solutions for distinguished local enterprises and discerning families nationwide.
@@ -191,7 +191,7 @@ export default function AboutView({ onViewChange }: AboutViewProps) {
             Start Your Custom Design
           </h3>
           <p className="text-zinc-700 text-sm font-sans leading-relaxed max-w-xl mx-auto">
-            Ready to create a custom monogram or visual identity for your brand, family estate, or boutique enterprise? Book a visual consultation with Tobi Adesina.
+            Ready to create a custom monogram or visual identity for your brand, family estate, or boutique enterprise? Book a visual consultation with Ijituyi Idowu Temitope.
           </p>
           <button
             onClick={() => {

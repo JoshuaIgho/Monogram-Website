@@ -1,6 +1,7 @@
 import { useState, FormEvent } from 'react';
 import { ViewType } from '../types';
 import { ArrowUpRight, Check } from 'lucide-react';
+import Logo from './Logo';
 
 interface FooterProps {
   onViewChange: (view: ViewType) => void;
@@ -44,18 +45,15 @@ export default function Footer({ onViewChange }: FooterProps) {
         
         {/* Column 1: Studio Identity */}
         <div className="flex flex-col space-y-6">
-          <div className="flex flex-col">
-            <span className="font-serif text-2xl tracking-widest text-[#0B0B0B]">MONOGRAM</span>
-            <span className="font-mono text-[9px] tracking-[0.3em] text-zinc-500 uppercase mt-0.5">Design Studio</span>
-          </div>
+          <Logo mode="header" />
           <p className="text-sm text-zinc-600 font-sans leading-relaxed max-w-sm">
-            Crafting custom brand identities, bespoke monograms, and timeless designs for distinguished organizations and private individuals.
+            Crafting custom brand identities, luxury monograms, bespoke signature logos, and timeless brand templates for distinguished businesses and individuals.
           </p>
           <div className="flex space-x-4 pt-2 font-mono">
             {['Instagram', 'WhatsApp', 'Facebook'].map((soc) => (
               <a
                 key={soc}
-                href={soc === 'WhatsApp' ? 'https://wa.me/2348000000000' : `https://${soc.toLowerCase()}.com`}
+                href={soc === 'WhatsApp' ? 'https://wa.me/2347063666220' : `https://${soc.toLowerCase()}.com`}
                 target="_blank"
                 rel="noreferrer"
                 className="text-xs font-mono tracking-widest text-zinc-500 hover:text-luxury-gold transition-colors duration-200"
@@ -153,7 +151,7 @@ export default function Footer({ onViewChange }: FooterProps) {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-zinc-250 flex flex-col md:flex-row items-center justify-between text-zinc-500 font-mono text-[10px] tracking-widest">
-        <span>© {new Date().getFullYear()} MONOGRAM DESIGN STUDIO. ALL RIGHTS RESERVED.</span>
+        <span>© {new Date().getFullYear()} IJITUYI SIGNATURE. ALL RIGHTS RESERVED.</span>
         <div className="flex space-x-6 mt-4 md:mt-0">
           <button onClick={() => navTo('terms')} className="hover:text-luxury-gold transition-colors duration-200 cursor-pointer focus:outline-none uppercase">TERMS & CONDITIONS</button>
           <button onClick={() => navTo('privacy')} className="hover:text-luxury-gold transition-colors duration-200 cursor-pointer focus:outline-none uppercase">PRIVACY POLICY</button>

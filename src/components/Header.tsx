@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ViewType } from '../types';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import Logo from './Logo';
 
 interface HeaderProps {
   currentView: ViewType;
@@ -48,15 +49,10 @@ export default function Header({ currentView, onViewChange }: HeaderProps) {
         {/* Left: Brand Identity */}
         <button
           onClick={() => handleNavClick('home')}
-          className="flex flex-col items-start focus:outline-none group cursor-pointer text-left"
+          className="flex items-center focus:outline-none group cursor-pointer text-left"
           id="header-brand-logo"
         >
-          <span className="font-serif text-xl md:text-2xl tracking-widest text-[#0B0B0B] group-hover:text-luxury-gold transition-colors duration-300">
-            MONOGRAM
-          </span>
-          <span className="font-mono text-[9px] tracking-[0.3em] text-zinc-500 uppercase mt-0.5">
-            Design Studio
-          </span>
+          <Logo mode="header" />
         </button>
 
         {/* Center: Desktop Navigation Links */}
@@ -131,10 +127,7 @@ export default function Header({ currentView, onViewChange }: HeaderProps) {
             >
               {/* Drawer Top Header Row */}
               <div className="flex items-center justify-between pb-6 border-b border-zinc-200">
-                <div className="flex flex-col">
-                  <span className="font-serif text-lg tracking-widest text-[#0B0B0B]">MONOGRAM</span>
-                  <span className="font-mono text-[9px] tracking-[0.2em] text-zinc-500 uppercase mt-0.5">Design Studio</span>
-                </div>
+                <Logo mode="header" />
                 <button
                   onClick={() => setMobileMenuOpen(false)}
                   className="p-3 bg-white border border-zinc-200 text-zinc-600 hover:text-luxury-gold focus:outline-none rounded-none cursor-pointer transition-colors"
@@ -173,7 +166,7 @@ export default function Header({ currentView, onViewChange }: HeaderProps) {
               {/* Contact / Inquire Action coordinates at the bottom */}
               <div className="pt-6 border-t border-zinc-200 space-y-4">
                 <span className="font-mono text-[9px] tracking-[0.25em] text-zinc-500 uppercase block">
-                  MONOGRAM DESIGN STUDIO
+                  IJITUYI SIGNATURE
                 </span>
                 <button
                   onClick={() => handleNavClick('contact')}

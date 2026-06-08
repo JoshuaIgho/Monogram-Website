@@ -1,6 +1,6 @@
 {
-  "name": "Monogram Design Studio",
-  "description": "A luxury web experience for a premium Monogram Design Studio showcasing elite brand identities, bespoke monograms, custom calligraphy, and editorial design portfolios.",
+  "name": "Ijituyi Signature",
+  "description": "A luxury web experience for IJITUYI SIGNATURE, a premium monogram and identity design studio specializing in bespoke signature logos, luxury monograms, and physical/digital branding keys.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

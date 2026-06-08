@@ -142,7 +142,7 @@ export const studioMilestones: Milestone[] = [
   {
     year: '2018',
     title: 'Founding in Lagos',
-    description: 'Founded by Tobi Adesina as a boutique lettering and calligraphy workspace, serving custom requests and bespoke wedding brandmarks in Lagos.'
+    description: 'Founded by Ijituyi Idowu Temitope as a boutique lettering and calligraphy workspace, serving custom requests and bespoke wedding brandmarks in Lagos.'
   },
   {
     year: '2020',
@@ -170,14 +170,14 @@ export const clientTestimonials: Testimonial[] = [
     brand: "Aurelia Estates"
   },
   {
-    quote: "Tobi & his team possess a rare understanding of luxury heritage. They avoided typical corporate clichés and gave us a crest that feels older than our company.",
+    quote: "Ijituyi & his team possess a rare understanding of luxury heritage. They avoided typical corporate clichés and gave us a crest that feels older than our company.",
     author: "Maximilian Vane",
     role: "Creative Director",
     avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=150&auto=format&fit=crop",
     brand: "The Velvet Room"
   },
   {
-    quote: "Sovereign Gin's bottle design is now a masterpiece. The heavy gold-dripped seal bearing Monogram Studio's monogram is what turns everyday buyers into collectors.",
+    quote: "Sovereign Gin's bottle design is now a masterpiece. The heavy gold-dripped seal bearing IJITUYI SIGNATURE's monogram is what turns everyday buyers into collectors.",
     author: "Beatriz d'Anjou",
     role: "Principal Distiller",
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=150&auto=format&fit=crop",

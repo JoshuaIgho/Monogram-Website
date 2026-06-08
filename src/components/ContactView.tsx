@@ -328,7 +328,7 @@ export default function ContactView({ onViewChange }: ContactViewProps) {
             <div>
               <span className="block font-mono text-[9px] uppercase tracking-[0.15em] text-zinc-500 mb-1">WhatsApp</span>
               <a 
-                href="https://wa.me/2348000000000" 
+                href="https://wa.me/2347063666220" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="text-sm font-serif font-semibold text-luxury-gold hover:text-[#0B0B0B] transition-colors"
@@ -340,11 +340,11 @@ export default function ContactView({ onViewChange }: ContactViewProps) {
             <div>
               <span className="block font-mono text-[9px] uppercase tracking-[0.15em] text-zinc-500 mb-1">Email</span>
               <a 
-                href="mailto:hello@businessname.com" 
+                href="mailto:ijituyiidowu@gmail.com" 
                 className="text-sm font-serif font-semibold text-[#0B0B0B] hover:text-luxury-gold transition-colors break-all"
                 id="form-email-link"
               >
-                hello@businessname.com
+                ijituyiidowu@gmail.com
               </a>
             </div>
             <div>
@@ -398,23 +398,23 @@ export default function ContactView({ onViewChange }: ContactViewProps) {
             
             <div className="flex flex-col sm:flex-row lg:flex-col gap-4">
               <a
-                href="mailto:hello@businessname.com"
+                href="mailto:ijituyiidowu@gmail.com"
                 className="flex items-center space-x-3 bg-white border border-zinc-200 hover:border-luxury-gold p-4 transition-colors font-mono text-xs text-zinc-650 tracking-wider hover:text-[#0B0B0B]"
                 id="right-email-link"
               >
                 <Mail className="w-4 h-4 text-luxury-gold" />
-                <span>hello@businessname.com</span>
+                <span>ijituyiidowu@gmail.com</span>
               </a>
 
               <a
-                href="https://wa.me/2348031234567"
+                href="https://wa.me/2347063666220"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center space-x-3 bg-white border border-zinc-200 hover:border-[#25D366] p-4 transition-colors font-mono text-xs text-zinc-650 tracking-widest hover:text-[#25D366] uppercase"
                 id="right-whatsapp-link"
               >
                 <MessageSquare className="w-4 h-4 text-emerald-500" />
-                <span>+234 803 123 4567 (WhatsApp)</span>
+                <span>+234 706 366 6220 (WhatsApp)</span>
               </a>
             </div>
           </div>
