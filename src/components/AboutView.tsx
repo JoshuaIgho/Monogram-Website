@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Milestone, ViewType } from '../types';
 import { studioMilestones } from '../data';
+import collageImg from '../assets/images/embroidery_master_collage_1785058037943.jpg';
 import { Scale, Heart, Shield, Award, Clock, ArrowUpRight } from 'lucide-react';
 
 interface AboutViewProps {
@@ -62,9 +63,9 @@ export default function AboutView({ onViewChange }: AboutViewProps) {
           <div className="lg:col-span-6 relative">
             <div className="absolute inset-x-0 bottom-0 top-1/4 bg-[#EFECE6]/80 border border-zinc-200 -z-10 -translate-x-6 translate-y-6" />
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC05wzPuitawxBNNRG_WvLQ6fxApzMcHr8tvQ1vY1QfiublbqtEID8zpS8lgbsZQEZ4iQE7an2CjnOMeJDF5poY898f9aa-VlHSfGAa8GIpjC_Wg7OJtpytNh4w4sUg9xajl8GcpLHlWhejKymErea8hkCADmg-izmhc3GrHWXvWQILyQD_ndGCUDWMTYnKlKA2evNYRrepnXQm3vOHBskvarCGGgTWjG-ubbI7Bm2oFgJo-pnlS3sAkCQfPXEF370TZktGmotx7z83"
-              alt="Intricate couture monogram textile embroidery closeup"
-              className="w-full object-cover aspect-[4/3] border border-zinc-200 filter grayscale"
+              src={collageImg}
+              alt="Intricate couture monogram textile embroidery showcase"
+              className="w-full object-cover aspect-[4/3] border border-zinc-200"
               referrerPolicy="no-referrer"
             />
             <div className="absolute top-4 right-4 bg-primary-dark/95 backdrop-blur-md px-4 py-2 border border-zinc-200 font-mono text-[9px] uppercase tracking-[0.25em] text-[#D4AF37]">

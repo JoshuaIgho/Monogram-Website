@@ -1,140 +1,153 @@
 import { PortfolioItem, GalleryItem, Milestone, Testimonial, ProcessStep } from './types';
 
+import radonImg from './assets/images/radon_monogram_font_1785057971442.jpg';
+import brownAgbadaImg from './assets/images/brown_agbada_garment_1785057984405.jpg';
+import whiteBubaImg from './assets/images/white_buba_silver_1785057996493.jpg';
+import birdcageImg from './assets/images/white_birdcage_agbada_1785058007927.jpg';
+import patternCardImg from './assets/images/pattern_template_card_1785058025918.jpg';
+import collageImg from './assets/images/embroidery_master_collage_1785058037943.jpg';
+import blackGoldCapImg from './assets/images/black_gold_cap_1785058049655.jpg';
+import whiteHexagonImg from './assets/images/white_hexagon_agbada_1785058060517.jpg';
+import blueBubaImg from './assets/images/blue_buba_flatlay_1785058076317.jpg';
+import sageTunicImg from './assets/images/sage_minimal_tunic_1785058087727.jpg';
+import dustBlueAgbadaImg from './assets/images/dust_blue_agbada_1785058097884.jpg';
+import palmCrestImg from './assets/images/palm_oval_crest_1785058108484.jpg';
+
 export const portfolioItems: PortfolioItem[] = [
   {
-    id: 'aurelia-estate',
-    title: 'Aurelia Estate',
+    id: 'radon-monogram',
+    title: 'RADON Monogram Font Family',
     category: 'Luxury',
-    description: 'Bespoke high-contrast gold foil monogram crest on heavy-textured dark cardstock.',
-    longDescription: 'An ultra-minimalist and editorial brand identity for an exclusive winemaking estate situated in Burgundy. We crafted a custom serif monogram displaying the interlaced initials of the founding families, utilizing dramatic low-key styling and real debossed gold leaf application.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBPilaZ6HKjTReWviOAV-PASTeXPNi3ia321yDSQAdwYXfEh6kvx4W3Nbv9S3yzuBzZH4sUD9ei8orXKzTbbfbLo82nyb1XNM6FilhBfGrkvEUjdXc5AD25Yla9cq1UP6Hq5VYmFCWFuzuYTDmr_-D0GdtjUJoZGs2M_95OgR3lld4ET01eQZWuYEnSvdH9znhW7VgcDbWT2_AhqYoZnk5as0hB04pFBSDgygcv2Nq_afbmYdjHeg6T2OB7Bfy67bXmeG_vSp6zydBp',
-    client: 'Aurelia Vineyards & Co.',
+    description: 'Modern geometric line font family designed for bespoke corporate and personal monograms.',
+    longDescription: 'An ultra-refined monogram typography family featuring interlocking geometric line structures on a deep crimson backdrop. Designed for high-fashion labels, bespoke stationery, and luxury personal signatures.',
+    image: radonImg,
+    client: 'Radon Luxury Typography',
     year: '2025',
-    services: ['Creative Direction', 'Monogram Design', 'Material Strategy', 'Gold Gilding'],
-    challenge: 'Aurelia Estate wanted to merge the heavy inheritance of their historical Burgundy wine-making land with the modern, minimalist sensibilities of contemporary wine collectors. Traditional family crests were too cluttered, while modern flat logos lacked prestige.',
-    solution: 'We simplified their multi-family heraldic crest into an interlocking three-letter serif monogram. By using geometric ratios combined with traditional calligraphic flourishes, we created an emblem that looks equally timeless pressed in heavy gold foil or engraved on a wax bottle-seal.',
-    beforeImg: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=600&auto=format&fit=crop',
-    afterImg: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBPilaZ6HKjTReWviOAV-PASTeXPNi3ia321yDSQAdwYXfEh6kvx4W3Nbv9S3yzuBzZH4sUD9ei8orXKzTbbfbLo82nyb1XNM6FilhBfGrkvEUjdXc5AD25Yla9cq1UP6Hq5VYmFCWFuzuYTDmr_-D0GdtjUJoZGs2M_95OgR3lld4ET01eQZWuYEnSvdH9znhW7VgcDbWT2_AhqYoZnk5as0hB04pFBSDgygcv2Nq_afbmYdjHeg6T2OB7Bfy67bXmeG_vSp6zydBp'
+    services: ['Monogram Font Design', 'Vector Ligatures', 'Type System', 'Digital Identity'],
+    challenge: 'Creating a modern monogram font family that seamlessly merges angular geometric lines with fluid curve ligatures, suitable for physical hot-stamping and high-resolution screen displays.',
+    solution: 'Designed five weight variations featuring continuous vector paths and dual-line parallel stems, giving each monogram character an architectural, high-end feel.',
+    beforeImg: radonImg,
+    afterImg: radonImg
   },
   {
-    id: 'velvet-room',
-    title: 'The Velvet Room',
+    id: 'royal-brown-agbada',
+    title: 'Royal Camel Agbada',
     category: 'Fashion',
-    description: 'Intricately embroidered silk thread monogram on deep-focus charcoal velvet.',
-    longDescription: 'High-fashion editorial branding featuring a bespoke fabric tag with a hand-designed monogram. The tactile velvet texture and subdued side-lighting represent ultimate comfort, sensory indulgence, and luxury couture.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC05wzPuitawxBNNRG_WvLQ6fxApzMcHr8tvQ1vY1QfiublbqtEID8zpS8lgbsZQEZ4iQE7an2CjnOMeJDF5poY898f9aa-VlHSfGAa8GIpjC_Wg7OJtpytNh4w4sUg9xajl8GcpLHlWhejKymErea8hkCADmg-izmhc3GrHWXvWQILyQD_ndGCUDWMTYnKlKA2evNYRrepnXQm3vOHBskvarCGGgTWjG-ubbI7Bm2oFgJo-pnlS3sAkCQfPXEF370TZktGmotx7z83',
-    client: 'Velvet Room Couture',
-    year: '2024',
-    services: ['Bespoke Typography', 'Couture Sizing Cards', 'Textile Strategy', 'Production Consultation'],
-    challenge: 'A luxury underground salon in Milan required an identifier that could be embroidered onto soft silk and velvet linings without snagging, lose none of its readability, and evoke secret members-only prestige.',
-    solution: 'Designed with continuous vector curves mimicking physical silk threads, the V-R monogram loops elegantly, creating a structural emblem. We calibrated a custom weight specifically for high-speed embroidery machines.',
-    beforeImg: 'https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=600&auto=format&fit=crop',
-    afterImg: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC05wzPuitawxBNNRG_WvLQ6fxApzMcHr8tvQ1vY1QfiublbqtEID8zpS8lgbsZQEZ4iQE7an2CjnOMeJDF5poY898f9aa-VlHSfGAa8GIpjC_Wg7OJtpytNh4w4sUg9xajl8GcpLHlWhejKymErea8hkCADmg-izmhc3GrHWXvWQILyQD_ndGCUDWMTYnKlKA2evNYRrepnXQm3vOHBskvarCGGgTWjG-ubbI7Bm2oFgJo-pnlS3sAkCQfPXEF370TZktGmotx7z83'
-  },
-  {
-    id: 'monolith-capital',
-    title: 'Monolith Capital',
-    category: 'Corporate',
-    description: 'Backlit metal monogram plaque on deep structured basalt slate.',
-    longDescription: 'Geometric and symmetrical architectural branding celebrating security, endurance, and elite corporate power. Warm golden highlights offset the raw, rough-textured graphite slate background.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBY4WI65BRkjWi3JDXXpyWy9Od0ESX0zhB9whbUyQ83vatC0RPAlQr8uDLVrFE-75mbq5Fdkk6UpADUVskn1M3h42IR6tTdE7mdt4N6nRNiiL83489vtrlAS5iXBAbirtyqSMXmRPSfRQZzaV5sgFB3U2AqHdYfl-pGfHvsqx-NBHoq_CmeCdHQjddUAuA4R0GZiJmcdpZkSY3Eh0KNUs8_5lyiQo-KUquuUAVa8XR43WfshUmrSAFG9SAx_1D8cjNpc-ywfHgTsQB9',
-    client: 'Monolith Private Banking',
+    description: 'High-fashion African luxury menswear with intricate geometric woven brown chest embroidery.',
+    longDescription: 'A bespoke grand Agbada robe crafted from premium camel wool-blend cloth, featuring complex geometric lattice embroidery across the chest placket and shoulders in rich mahogany and earth tones.',
+    image: brownAgbadaImg,
+    client: 'Buba Classic Couture',
     year: '2025',
-    services: ['Architectural Identity', 'Slab Serif Custom font', 'Environmental Design'],
-    challenge: 'To redefine wealth management for a new generation, shifting away from wooden, dusty bank boards into high-end minimalist materiality without sacrificing trust and legacy.',
-    solution: 'An architectural monogram of the initials "M" and "C" forged in solid brushed bronze, highlighted with integrated soft 2700K backlight against dark vertical slate, echoing strength and digital refinement.',
-    beforeImg: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600&auto=format&fit=crop',
-    afterImg: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBY4WI65BRkjWi3JDXXpyWy9Od0ESX0zhB9whbUyQ83vatC0RPAlQr8uDLVrFE-75mbq5Fdkk6UpADUVskn1M3h42IR6tTdE7mdt4N6nRNiiL83489vtrlAS5iXBAbirtyqSMXmRPSfRQZzaV5sgFB3U2AqHdYfl-pGfHvsqx-NBHoq_CmeCdHQjddUAuA4R0GZiJmcdpZkSY3Eh0KNUs8_5lyiQo-KUquuUAVa8XR43WfshUmrSAFG9SAx_1D8cjNpc-ywfHgTsQB9'
+    services: ['High Couture Embroidery', 'Textile Strategy', 'Agbada Tailoring', 'Pattern Drafting'],
+    challenge: 'Designing a traditional grand robe pattern that maintains weight and structural drape while incorporating high-density geometric embroidery across the wide chest panel.',
+    solution: 'We engineered a reinforced canvas backing behind the embroidery panel, ensuring the geometric lattice motif lays flat and crisp without distortion during movement.',
+    beforeImg: brownAgbadaImg,
+    afterImg: brownAgbadaImg
   },
   {
-    id: 'lumiere-nuptials',
-    title: 'Lumiere Nuptials',
-    category: 'Wedding',
-    description: 'Gold foil flat lay stationery suite detailed with traditional calligraphic wax seals.',
-    longDescription: 'Exquisite, romantic editorial wedding stationery designed for an open-air ceremony under the stars. Dried florals, bespoke hand-made paper, and a heavy-gauge brass seal complete this timeless, dreamy identity.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCZg04T32bbadlnKho4IQYJlUD_TjcskdBCq2HbpbLno0aKF3NNm0BIhhuUhtlRBbQH06XGzMK2lHuMc5yonzvBeE0Y9hTLC5ljJ6QC6xHMqUYb-LGHHqmCqB_Y-XzTS67SahtIp5QNb3zHF68WK2l5gbwhH7HLqUuR0PUFEYeSn_YgJ_m9UmKSBc2uMeK0NCI9AC_RXqoLkFj_apeRQmHiHZVOgy2BdRbWPAEu-n-QF_a9NBWeLsKZk2TWp1EvGp0OaN9plQKQ7jA2',
-    client: 'The Lumiere Family',
+    id: 'white-buba-classic',
+    title: 'Buba Classic Diamond Stitch',
+    category: 'Fashion',
+    description: 'Crisp tailored white cotton Buba with delicate silver diamond lattice geometric embroidery.',
+    longDescription: 'A pristine white cotton Buba shirt featuring hand-guided silver metallic thread embroidery along the central button placket and breast pocket, crafted in our Lagos atelier.',
+    image: whiteBubaImg,
+    client: 'Buba Classic Menswear',
     year: '2024',
-    services: ['Custom Heraldry', 'Wedding Stationery Design', 'Calligraphy', 'Wax Seal Crafting'],
-    challenge: 'A high-profile couple desired an heirloom-quality monogram that was deeply romantic, with elegant ligatures and fluid lines, that could connect multiple heritage materials: fine Italian cotton paper, wax seals, and digital animations.',
-    solution: 'We synthesized their family initials with stylized laurel wreaths and thin star ligatures, establishing a custom monogram. Hand-carved onto a custom brass matrix, it allowed rapid hot-wax stamping of invitations.',
-    beforeImg: 'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=600&auto=format&fit=crop',
-    afterImg: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCZg04T32bbadlnKho4IQYJlUD_TjcskdBCq2HbpbLno0aKF3NNm0BIhhuUhtlRBbQH06XGzMK2lHuMc5yonzvBeE0Y9hTLC5ljJ6QC6xHMqUYb-LGHHqmCqB_Y-XzTS67SahtIp5QNb3zHF68WK2l5gbwhH7HLqUuR0PUFEYeSn_YgJ_m9UmKSBc2uMeK0NCI9AC_RXqoLkFj_apeRQmHiHZVOgy2BdRbWPAEu-n-QF_a9NBWeLsKZk2TWp1EvGp0OaN9plQKQ7jA2'
+    services: ['Atelier Embroidery', 'Placket & Pocket Stitching', 'Couture Sizing', 'Metallic Thread Work'],
+    challenge: 'Applying metallic silver thread on lightweight white cotton without puckering the fabric or causing tension stiffness along the chest placket.',
+    solution: 'Calibrated machine tension and thread elasticity to allow the silver diamond lattice stitch to flex naturally with the cotton weave.',
+    beforeImg: whiteBubaImg,
+    afterImg: whiteBubaImg
   },
   {
-    id: 'sovereign-gin',
-    title: 'Sovereign Gin',
-    category: 'Luxury',
-    description: 'Gold-alloy wax seal holding an intricately engraved historic crown monogram.',
-    longDescription: 'High-end spirits packaging concept focusing on heritage, artisanal distilling, and Royal appointment. The wax-dripped cap acts as a tactile guarantee of premium, untouched liquid culinary art.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCdXxlZmWpF78jhPuCjenSF8DT-CxYW1eXwtiHojDUTqCVUsQ4ffU8poSXOazyXFQks2vf0zE-uK_lbz7pu01izzmYvsbcgm80NcXcjXjkqgwOirbD9lMHXr8zhvXRl4D48PwGE_tKoFijwUonnPoDhEAOwx_94PX3Z5A258EjIL-l0-QwPsrbOiYtxg1OPFcdjd0hWKTaAFg039X0Szrq7vzmHSgyxTT8pN2ZhI22KVwXyG4QgHpOQMwzQnw9pgAv-KkpF185kAJ5S',
-    client: 'Sovereign Spirits Distillery',
-    year: '2025',
-    services: ['Packaging Strategy', 'Engraving', 'Hardware Prototyping', 'Visual Identity'],
-    challenge: 'A bespoke small-batch gin maker wanted to command a premium price on the global boutique market. The bottle had to feel like it came from an royal apothecary collection, displaying both heritage and design brilliance.',
-    solution: 'We engineered a heavy gold wax mixture and designed an engraved royal stamp that displays the distillery monogram. Positioned right on the dark basalt neck, the gold wax becomes a stunning visual anchor on the retail shelf.',
-    beforeImg: 'https://images.unsplash.com/photo-1527061011665-3652c757a4d4?q=80&w=600&auto=format&fit=crop',
-    afterImg: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCdXxlZmWpF78jhPuCjenSF8DT-CxYW1eXwtiHojDUTqCVUsQ4ffU8poSXOazyXFQks2vf0zE-uK_lbz7pu01izzmYvsbcgm80NcXcjXjkqgwOirbD9lMHXr8zhvXRl4D48PwGE_tKoFijwUonnPoDhEAOwx_94PX3Z5A258EjIL-l0-QwPsrbOiYtxg1OPFcdjd0hWKTaAFg039X0Szrq7vzmHSgyxTT8pN2ZhI22KVwXyG4QgHpOQMwzQnw9pgAv-KkpF185kAJ5S'
-  },
-  {
-    id: 'private-label',
-    title: 'The Private Label',
+    id: 'aves-birdcage-agbada',
+    title: 'Aves Freedom Suite',
     category: 'Personal',
-    description: 'Sleek translucent dashboard displaying real-time responsive monogram motion graphics.',
-    longDescription: 'A custom, elite personal concierge application built around a glowing, procedural monogram. Merging vector elegance and technological premium architecture, it adapts dynamically to touch.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAS-ifV1WXpAiDuUcKYiQ_IjQ1U9Vbd4sfXSxSVbiniiyID6uw4ZLQDj7rN-1U_eT9ar_mGHBAk4DVYDvbTrFhpQ7sHQIFDiiVEbTRSKLg1IXkP51GWnzuZi78yroDK1BizTWkdE44lGJRWvaXh0NeHo-rgxSS-VjhkiBlefKR40ZyZXkI1iEI7G2yQnfp2873OjuAfbCsxRNXP4aCx_ogJJZwXOPGdel2qMO2FtRmVojdOyPvPmstGIZuuP8LhY7L0MrmbT-qKoj4l',
-    client: 'The Private Label International',
+    description: 'Modern luxury white Agbada suit featuring a stylized birdcage & flying birds embroidery motif.',
+    longDescription: 'An iconic two-piece white short-sleeve resort Agbada set showcasing an artistic birdcage center emblem with black silhouetted birds escaping into flight, paired with tailored trousers.',
+    image: birdcageImg,
+    client: 'El-Khaleel Collection',
+    year: '2025',
+    services: ['Custom Symbol Embroidery', 'Resort Agbada Design', 'Illustrative Stitching'],
+    challenge: 'Translating a delicate illustrative drawing of a birdcage and flying birds into threadwork that remains sharp on clean white linen.',
+    solution: 'Utilized high-density black satin stitch vectors to define the cage geometry and tapered bird wings, creating striking contrast against the crisp white silhouette.',
+    beforeImg: birdcageImg,
+    afterImg: birdcageImg
+  },
+  {
+    id: 'pattern-spec-23nl',
+    title: 'Pattern Spec 23NL-0224',
+    category: 'Corporate',
+    description: 'Technical cross-stitch embroidery template card specifying placket and pocket dimensions.',
+    longDescription: 'A technical embroidery specification chart used in our production workshop, defining precise millimeter grid layouts for plackets (3*49cm) and pockets (11.5*15cm) in grey and gold threads.',
+    image: patternCardImg,
+    client: 'IJITUYI Technical Atelier',
     year: '2024',
-    services: ['Digital Branding', 'Real-time Vector Motion', 'UI & UX Design', 'Exclusive Application System'],
-    challenge: 'A bespoke lifestyle manager wanted their application to feel like entering a five-star hotel lobby. Standard app navigation icons felt cheap, distracting, and cluttered.',
-    solution: 'Designed an interactive monogram at the core of the experience. Upon opening the application, the signature monogram dynamically draws itself on screen using custom SVG animations, guiding the client smoothly into the service menu.',
-    beforeImg: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop',
-    afterImg: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAS-ifV1WXpAiDuUcKYiQ_IjQ1U9Vbd4sfXSxSVbiniiyID6uw4ZLQDj7rN-1U_eT9ar_mGHBAk4DVYDvbTrFhpQ7sHQIFDiiVEbTRSKLg1IXkP51GWnzuZi78yroDK1BizTWkdE44lGJRWvaXh0NeHo-rgxSS-VjhkiBlefKR40ZyZXkI1iEI7G2yQnfp2873OjuAfbCsxRNXP4aCx_ogJJZwXOPGdel2qMO2FtRmVojdOyPvPmstGIZuuP8LhY7L0MrmbT-qKoj4l'
+    services: ['Pattern Specification', 'Embroidery Drafting', 'Atelier Blueprints', 'Technical Cards'],
+    challenge: 'Standardizing custom embroidery measurements across multi-city artisan workshops to maintain 100% precision.',
+    solution: 'Created digital vector blueprint specification cards that map stitch density, width, and placement ratios for seamless atelier execution.',
+    beforeImg: patternCardImg,
+    afterImg: patternCardImg
+  },
+  {
+    id: 'master-embroidery-grid',
+    title: 'Master Embroidery Showcase',
+    category: 'Wedding',
+    description: 'Multi-medium catalog collage highlighting computerized embroidery, caps, and monograms.',
+    longDescription: 'A comprehensive brand showcase collage displaying IJITUYI SIGNATURE embroidery capabilities: from computerized multi-head embroidery machines ("Worlden") to custom embroidered caps, MN laurel logos, and SM gold monograms.',
+    image: collageImg,
+    client: 'Black Man Couture & Buba Classic',
+    year: '2025',
+    services: ['Atelier Direction', 'Multi-Substrate Branding', 'Caps & Agbada', 'Crest Design'],
+    challenge: 'Presenting a wide portfolio of custom menswear, embroidery machinery, and crest designs in a unified luxury presentation.',
+    solution: 'Curated a multi-frame editorial grid highlighting high-magnification thread details alongside finished bespoke garments and machinery.',
+    beforeImg: collageImg,
+    afterImg: collageImg
   }
 ];
 
 export const galleryItems: GalleryItem[] = [
   {
     id: 'gal-1',
-    title: 'Precision Engraving',
-    description: 'A macro close-up of our signature brass matrix being hand-carved in our studio.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuByazScbuf-auAC3ecexMuzsnT648F8FvdXuMe5jx2sHO63r7DKpTaxFJTpSkgtcBz6fvxFccypxQYmzcs2KnvseQYeBRlRAw4xS8ydQUdeAviPsxXHUjytOV_4vfJrMIqPQvpgvvs64Q-2wym7ruKJLWcoplQ0k_iogc6QbOtzmkoN1mqG3B8LjjxH4Jo06VuQSgES30tulE5eaoNnRoI91i4AiCPoJMEsQK5aNKjnyc8ILlH8hXjcUbALjCTZKrzsKXtNSItGoWbH',
-    category: 'Sketch'
-  },
-  {
-    id: 'gal-2',
-    title: 'Textured Gilded Cardstock',
-    description: 'Light playing on heavy cotton paper, showing the deep indentation of an Aurelia monogram.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBPilaZ6HKjTReWviOAV-PASTeXPNi3ia321yDSQAdwYXfEh6kvx4W3Nbv9S3yzuBzZH4sUD9ei8orXKzTbbfbLo82nyb1XNM6FilhBfGrkvEUjdXc5AD25Yla9cq1UP6Hq5VYmFCWFuzuYTDmr_-D0GdtjUJoZGs2M_95OgR3lld4ET01eQZWuYEnSvdH9znhW7VgcDbWT2_AhqYoZnk5as0hB04pFBSDgygcv2Nq_afbmYdjHeg6T2OB7Bfy67bXmeG_vSp6zydBp',
-    category: 'Paper'
-  },
-  {
-    id: 'gal-3',
-    title: 'Embroidered Velvet Detail',
-    description: 'Gold silk fibers perfectly aligning to define a refined luxury menswear crest.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC05wzPuitawxBNNRG_WvLQ6fxApzMcHr8tvQ1vY1QfiublbqtEID8zpS8lgbsZQEZ4iQE7an2CjnOMeJDF5poY898f9aa-VlHSfGAa8GIpjC_Wg7OJtpytNh4w4sUg9xajl8GcpLHlWhejKymErea8hkCADmg-izmhc3GrHWXvWQILyQD_ndGCUDWMTYnKlKA2evNYRrepnXQm3vOHBskvarCGGgTWjG-ubbI7Bm2oFgJo-pnlS3sAkCQfPXEF370TZktGmotx7z83',
+    title: 'Fila Cap & Pattern No. 23',
+    description: 'Close-up of a hand inspecting a bespoke black and gold woven houndstooth traditional Fila cap and matching fabric swatch.',
+    image: blackGoldCapImg,
     category: 'Textile'
   },
   {
+    id: 'gal-2',
+    title: '3D Hexagon Optical Agbada',
+    description: 'A bespoke white luxury Agbada robe featuring complex 3D optical geometric hexagon maze embroidery on the chest.',
+    image: whiteHexagonImg,
+    category: 'Detail'
+  },
+  {
+    id: 'gal-3',
+    title: 'Sky Blue Damask Buba',
+    description: 'Flat lay of a sky-blue textured Buba shirt with intricate diamond cross-stitch embroidery along the placket and pocket.',
+    image: blueBubaImg,
+    category: 'Paper'
+  },
+  {
     id: 'gal-4',
-    title: 'Sovereign Melted Gold',
-    description: 'The golden wax sealant solidifying, capturing a traditional crest forever.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCdXxlZmWpF78jhPuCjenSF8DT-CxYW1eXwtiHojDUTqCVUsQ4ffU8poSXOazyXFQks2vf0zE-uK_lbz7pu01izzmYvsbcgm80NcXcjXjkqgwOirbD9lMHXr8zhvXRl4D48PwGE_tKoFijwUonnPoDhEAOwx_94PX3Z5A258EjIL-l0-QwPsrbOiYtxg1OPFcdjd0hWKTaAFg039X0Szrq7vzmHSgyxTT8pN2ZhI22KVwXyG4QgHpOQMwzQnw9pgAv-KkpF185kAJ5S',
+    title: 'Sage Wingsball Tunic',
+    description: 'Tailored sage grey luxury tunic featuring minimal black geometric cross embroidery down the center placket.',
+    image: sageTunicImg,
     category: 'Metal'
   },
   {
     id: 'gal-5',
-    title: 'Monolithic Architectural Slate',
-    description: 'A brushed bronze metal monogram gleaming softly from hidden indirect slate ledges.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBY4WI65BRkjWi3JDXXpyWy9Od0ESX0zhB9whbUyQ83vatC0RPAlQr8uDLVrFE-75mbq5Fdkk6UpADUVskn1M3h42IR6tTdE7mdt4N6nRNiiL83489vtrlAS5iXBAbirtyqSMXmRPSfRQZzaV5sgFB3U2AqHdYfl-pGfHvsqx-NBHoq_CmeCdHQjddUAuA4R0GZiJmcdpZkSY3Eh0KNUs8_5lyiQo-KUquuUAVa8XR43WfshUmrSAFG9SAx_1D8cjNpc-ywfHgTsQB9',
+    title: 'Syari Slate Maze Agbada',
+    description: 'Dusty slate blue Agbada robe displaying a bold architectural maze woven embroidery panel on a dark studio mannequin.',
+    image: dustBlueAgbadaImg,
     category: 'Detail'
   },
   {
     id: 'gal-6',
-    title: 'Heirloom Inks',
-    description: 'A hand-ground ink pigments well combined for bespoke calligraphy creation.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCZg04T32bbadlnKho4IQYJlUD_TjcskdBCq2HbpbLno0aKF3NNm0BIhhuUhtlRBbQH06XGzMK2lHuMc5yonzvBeE0Y9hTLC5ljJ6QC6xHMqUYb-LGHHqmCqB_Y-XzTS67SahtIp5QNb3zHF68WK2l5gbwhH7HLqUuR0PUFEYeSn_YgJ_m9UmKSBc2uMeK0NCI9AC_RXqoLkFj_apeRQmHiHZVOgy2BdRbWPAEu-n-QF_a9NBWeLsKZk2TWp1EvGp0OaN9plQKQ7jA2',
-    category: 'Detail'
+    title: 'Palm Frond Heirloom Crest',
+    description: 'Minimalist black oval monogram symbol featuring interlocking palm frond leaves on fine off-white linen texture.',
+    image: palmCrestImg,
+    category: 'Sketch'
   }
 ];
 

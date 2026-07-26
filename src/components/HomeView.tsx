@@ -343,9 +343,9 @@ export default function HomeView({
             <div className="lg:col-span-5 relative">
               <div className="absolute inset-0 bg-luxury-gold/5 -translate-x-3 translate-y-3 pointer-events-none border border-luxury-gold/20" />
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuByazScbuf-auAC3ecexMuzsnT648F8FvdXuMe5jx2sHO63r7DKpTaxFJTpSkgtcBz6fvxFccypxQYmzcs2KnvseQYeBRlRAw4xS8ydQUdeAviPsxXHUjytOV_4vfJrMIqPQvpgvvs64Q-2wym7ruKJLWcoplQ0k_iogc6QbOtzmkoN1mqG3B8LjjxH4Jo06VuQSgES30tulE5eaoNnRoI91i4AiCPoJMEsQK5aNKjnyc8ILlH8hXjcUbALjCTZKrzsKXtNSItGoWbH"
-                alt="Ijituyi Idowu Temitope working in luxury sketching workshop"
-                className="w-full object-cover aspect-[4/5] grayscale hover:grayscale-0 transition-all duration-700 ease-in-out border border-zinc-200"
+                src={portfolioItems[1]?.image || portfolioItems[0]?.image}
+                alt="IJITUYI SIGNATURE bespoke menswear atelier craftsmanship"
+                className="w-full object-cover aspect-[4/5] hover:scale-105 transition-all duration-700 ease-in-out border border-zinc-200"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute bottom-4 left-4 bg-primary-dark/95 backdrop-blur-md px-4 py-2 border border-zinc-200 font-mono text-[9px] uppercase tracking-[0.25em] text-luxury-gold">
