@@ -28,7 +28,7 @@ export default function HomeView({
 
   // Handle subtle counter count-up when the section loaded
   useEffect(() => {
-    const targets = [350, 15, 80, 12000];
+    const targets = [1000, 15, 80, 12000];
     const duration = 2000;
     const steps = 50;
     const intervalTime = duration / steps;
